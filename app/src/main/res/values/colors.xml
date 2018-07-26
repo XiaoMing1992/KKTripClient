@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 主色调 -->
+    <color name="main_primary">#A16736</color>
+    <color name="main_accent">#FF7400</color>
+
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#DC143C</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="other">#784418</color>
+    <color name="dialog_black">#cc000000</color>
+    <color name="dialog_white_light">#7fffffff</color>
+    <color name="dialog_white">#ccffffff</color>
+
+    <color name="item_gray">#667889</color>
+    <color name="text_gray">#769299</color>
+    <color name="ninety_black">#e5000000</color>
+    <color name="button_text">#fafafa</color>
+    <color name="pop_activity_black">#99000000</color>
+
+    <!-- 订单管理 -->
+    <color name="order_color1">#784418</color>
+    <color name="order_color2">#FFFFFF</color>
+    <color name="order_color3">#FF7400</color>
+    <color name="order_color4">#D4D4D4</color>
+    <color name="order_color5">#FFDDC2</color>
+    <color name="order_color6">#A16736</color>
+    <color name="order_color7">#3F250F</color>
+    <color name="order_color8">#A26837</color>
+
+    <!-- 收藏页面 -->
+    <color name="collect_color1">#FFFFFF</color>
+    <color name="collect_color2">#FF6500</color>
+    <color name="collect_color3">#784418</color>
+    <color name="collect_color4">#A26837</color>
+    <color name="collect_color5">#FF7400</color>
+    <color name="collect_color6">#cea98c</color>
+
+    <color name="dialog_text_selected">#FFFFFFFF</color>
+    <color name="dialog_text_unselected">#BBA26837</color>
+    <color name="toast_text">#EDEDED</color>
+
+    <color name="logout_btn_text">#FFFFFF</color>
+
+    <!-- 我的页面 -->
+    <color name="my_page_item_tv">#FFFFFFFF</color>
+
+
+</resources>

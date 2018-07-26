@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_thumb0"
+        android:layout_width="172dp"
+        android:layout_height="122dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:rotation="-20">
+
+        <ImageView
+            android:id="@+id/detail_thumb0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/default_image"/>
+        
+        <ImageView
+            android:id="@+id/detail_video_labe0"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:background="@drawable/detail_thumb_video_icon_selector"/>
+
+        <!--用背景盖住图片旋转后的锯齿-->
+        <View
+            android:id="@+id/detail_thumb0_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_selector"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_thumb2"
+        android:layout_width="172dp"
+        android:layout_height="122dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="38dp"
+        android:rotation="14"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_thumb2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/default_image"/>
+
+        <View
+            android:id="@+id/detail_thumb2_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_selector"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_thumb1"
+        android:layout_width="172dp"
+        android:layout_height="122dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="56dp"
+        android:rotation="-6"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_thumb1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/default_image"/>
+
+        <View
+            android:id="@+id/detail_thumb1_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_selector"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_thumb3"
+        android:layout_width="172dp"
+        android:layout_height="122dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="480dp"
+        android:layout_marginTop="10dp"
+        android:rotation="-3"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/detail_thumb3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/default_image"/>
+
+        <View
+            android:id="@+id/detail_thumb3_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_selector"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_thumb4"
+        android:layout_width="172dp"
+        android:layout_height="122dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginLeft="596dp"
+        android:layout_marginTop="22dp"
+        android:rotation="-12"
+        android:gravity="center"
+        android:descendantFocusability="beforeDescendants">
+
+        <ImageView
+            android:id="@+id/detail_thumb4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/default_image"/>
+
+        <View
+            android:id="@+id/detail_thumb4_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_selector"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

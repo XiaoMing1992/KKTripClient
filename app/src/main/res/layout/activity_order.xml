@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bg_blur">
+
+    <LinearLayout
+        android:id="@+id/order_confirm_linear_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:textSize="38sp"
+            android:text="@string/order_confirm_title"
+            android:textColor="#784418"
+            android:alpha="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="112dp"
+            android:textSize="20sp"
+            android:text="@string/order_confirm_good_title"
+            android:includeFontPadding="false"
+            android:textColor="#784418"/>
+
+        <RelativeLayout
+            android:layout_width="1056dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/order_confirm_title_bg">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:alpha="0.8"
+                android:text="@string/order_info"
+                android:textColor="#a16736"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="600dp"
+                android:alpha="0.8"
+                android:text="@string/order_amount"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="760dp"
+                android:alpha="0.7"
+                android:text="@string/order_money"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="940dp"
+                android:alpha="0.8"
+                android:text="@string/order_state"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="1056dp"
+            android:layout_height="116dp"
+            android:background="@drawable/order_confirm_content_bg"
+            android:focusable="false"
+            android:layout_marginTop="-1dp"
+            android:gravity="center_vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:gravity="center">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/order_confirm_img_thumb"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:gravity="center"
+                    android:focusable="false"
+                    app:riv_corner_radius="4dp" />
+
+                <TextView
+                    android:id="@+id/order_confirm_txt_good_name"
+                    android:layout_width="298dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/order_confirm_img_thumb"
+                    android:gravity="left|center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="#a16736"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_confirm_txt_good_num"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="600dp"
+                android:gravity="center"
+                android:textColor="#a16736"
+                android:textSize="20sp"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/order_confirm_txt_good_price"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="760dp"
+                android:gravity="center"
+                android:textColor="#a16736"
+                android:textSize="20sp"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/order_confirm_txt_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="940dp"
+                android:gravity="center"
+                android:textColor="#a16736"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="112dp"
+            android:textSize="20sp"
+            android:text="@string/order_confirm_user_title"
+            android:includeFontPadding="false"
+            android:textColor="#784418"/>
+
+        <RelativeLayout
+            android:layout_width="1056dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/order_confirm_title_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:alpha="0.8"
+                android:text="@string/order_confirm_user_name"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="287dp"
+                android:alpha="0.8"
+                android:text="@string/order_confirm_user_phone"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="525dp"
+                android:alpha="0.7"
+                android:text="@string/order_confirm_user_time"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="795dp"
+                android:alpha="0.8"
+                android:text="@string/order_confirm_user_address"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="1056dp"
+            android:layout_height="74dp"
+            android:background="@drawable/order_confirm_content_bg"
+            android:focusable="false"
+            android:layout_marginTop="-1dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/order_confirm_txt_user_name"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#a16736"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/order_confirm_txt_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="287dp"
+                android:gravity="center"
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/order_confirm_txt_time"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="525dp"
+                android:gravity="center_vertical"
+                android:textColor="#a16736"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/order_confirm_txt_address"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="795dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#a16736"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/order_confirm_btn_sure"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:text="@string/order_confirm_btn_buy"
+                android:textSize="@dimen/detail_btn_size"
+                android:alpha="0.7"
+                android:textColor="@drawable/detail_btn_txt_selector"
+                android:background="@drawable/detail_btn_selector"/>
+
+            <Button
+                android:id="@+id/order_confirm_btn_cancel"
+                android:layout_width="150dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/order_confirm_btn_abandon"
+                android:textSize="@dimen/detail_btn_size"
+                android:alpha="0.7"
+                android:textColor="@drawable/detail_btn_txt_selector"
+                android:background="@drawable/detail_btn_selector"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_confirm_relative_pay_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <include layout="@layout/write_order_result" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_confirm_relative_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/loading_page" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_confirm_relative_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/error_page" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+

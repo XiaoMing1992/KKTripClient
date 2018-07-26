@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/main_bg_blur"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/write_scroll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/write_linear_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="86dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="38sp"
+                android:textColor="#784418"
+                android:text="@string/write_title"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="374dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_good_name"/>
+
+                <TextView
+                    android:id="@+id/write_txt_goodname"
+                    android:layout_width="446dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="374dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_good_price"/>
+
+                <TextView
+                    android:id="@+id/write_txt_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:text="@string/write_good_price_yuan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="374dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_good_num"/>
+
+
+                <TextView
+                    android:id="@+id/write_txt_num"
+                    android:layout_width="446dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/main_primary"
+                    android:maxLines="1"
+                    android:background="@drawable/write_edit_selector"
+                    android:gravity="center"
+                    android:text=""
+                    android:focusable="true"
+                    android:includeFontPadding="false"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="348dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_good_address"/>
+
+                <TextView
+                    android:id="@+id/write_txt_address"
+                    android:layout_width="446dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="20sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:background="@drawable/write_edit_selector"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="374dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_user_name"/>
+
+                <EditText
+                    android:id="@+id/write_edit_username"
+                    android:layout_width="446dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="20sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:background="@drawable/write_edit_selector"
+                    android:gravity="center"
+                    android:textColorHint="#99a16736"
+                    android:hint="@string/write_edit_hint_name"
+                    android:textCursorDrawable="@drawable/write_edit_cursor"/>
+
+                <TextView
+                    android:id="@+id/write_txt_username_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ea2222"
+                    android:text="@string/write_toast_noname"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="322dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_user_phone"/>
+
+
+
+                <EditText
+                    android:id="@+id/write_edit_userphone"
+                    android:layout_width="446dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="20sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:background="@drawable/write_edit_selector"
+                    android:gravity="center"
+                    android:textColorHint="#99a16736"
+                    android:hint="@string/write_edit_hint_phone"
+                    android:textCursorDrawable="@drawable/write_edit_cursor"/>
+
+                <TextView
+                    android:id="@+id/write_txt_userphone_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ea2222"
+                    android:text="@string/write_toast_phone_novild"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="374dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:alpha="0.8"
+                    android:text="@string/write_good_total"/>
+
+                <TextView
+                    android:id="@+id/write_txt_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:maxLines="1"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textColor="#a16736"
+                    android:text="@string/write_good_price_yuan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/write_checkbox_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/write_checkbox_uncheck_selector"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#a16736"
+                    android:textSize="16sp"
+                    android:text="@string/write_protocol_read"/>
+
+                <TextView
+                    android:id="@+id/write_txt_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/write_protocol_txt_selector"
+                    android:textSize="16sp"
+                    android:alpha="0.8"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:text="@string/write_protocol_title"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp">
+
+                <Button
+                    android:id="@+id/write_btn_sure"
+                    android:layout_width="150dp"
+                    android:layout_height="46dp"
+                    android:text="@string/write_btn_sure"
+                    android:textSize="@dimen/detail_btn_size"
+                    android:textColor="@drawable/detail_btn_txt_selector"
+                    android:background="@drawable/detail_btn_selector"/>
+
+                <Button
+                    android:id="@+id/write_btn_cancel"
+                    android:layout_width="150dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/write_btn_cancel"
+                    android:textSize="@dimen/detail_btn_size"
+                    android:textColor="@drawable/detail_btn_txt_selector"
+                    android:background="@drawable/detail_btn_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/write_linear_tips"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="550dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="@string/write_tip_title"/>
+
+        <TextView
+            android:id="@+id/write_txt_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="#ffffff"
+            android:alpha="0.8"
+            android:textSize="16sp"
+            android:text="@string/write_tip_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/write_linear_select_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/write_txt_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:textSize="38sp"
+            android:textColor="#784418"
+            android:text="@string/write_select_count"/>
+
+        <!-- 为了防止选中时出现系统自带背景，设置listSelector值为#00000000 -->
+        <com.konka.kktripclient.detail.customview.CycleWheelView
+            android:id="@+id/write_select_cyclewheel"
+            android:layout_width="368dp"
+            android:layout_height="528dp"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:layout_below="@id/write_txt_num_title"
+            android:listSelector="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/write_linear_select_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/write_txt_city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:textSize="38sp"
+            android:textColor="#784418"
+            android:focusable="false"
+            android:text="@string/write_select_city"/>
+
+
+        <Button
+            android:id="@+id/write_btn_city0"
+            android:layout_width="520dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="100dp"
+            android:textSize="32sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:background="@drawable/write_city_btn_selector"/>
+
+        <Button
+            android:id="@+id/write_btn_city1"
+            android:layout_width="520dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:background="@drawable/write_city_btn_selector"/>
+
+        <Button
+            android:id="@+id/write_btn_city2"
+            android:layout_width="520dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:background="@drawable/write_city_btn_selector"/>
+
+        <Button
+            android:id="@+id/write_btn_city3"
+            android:layout_width="520dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:background="@drawable/write_city_btn_selector"/>
+
+        <Button
+            android:id="@+id/write_btn_city4"
+            android:layout_width="520dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:background="@drawable/write_city_btn_selector"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/write_relative_error_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/error_page_video" />
+    </RelativeLayout>
+
+</RelativeLayout>

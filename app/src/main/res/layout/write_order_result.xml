@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.konka.kktripclient.detail.customview.StrokeTextView
+        android:id="@+id/write_txt_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:textSize="28sp"
+        android:text=""
+        android:textColor="#784418"
+        android:alpha="0.9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textSize="24sp"
+        android:text="@string/write_pay_tip"
+        android:textColor="#a16736"
+        android:alpha="0.7"/>
+
+    <RelativeLayout
+        android:layout_width="1081dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/manage_order_bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.7"
+            android:text="@string/order_number"
+            android:textColor="#a16736"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:alpha="0.7"
+            android:text="@string/order_info"
+            android:textColor="#a16736"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="684dp"
+            android:alpha="0.7"
+            android:text="@string/order_amount"
+            android:textColor="#a16736"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="787dp"
+            android:alpha="0.7"
+            android:text="@string/order_money"
+            android:textColor="#a16736"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="923dp"
+            android:alpha="0.7"
+            android:text="@string/order_state"
+            android:textColor="#a16736"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="1081dp"
+        android:layout_height="195dp"
+        android:background="@drawable/manage_order_bg"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/write_order_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:alpha="0.7"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="#a16736"
+            android:textSize="@dimen/default_20_sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="270dp"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/write_order_img_thumb"
+                android:layout_width="128dp"
+                android:layout_height="72dp"
+                android:gravity="center"
+                app:riv_corner_radius="4dp" />
+
+            <TextView
+                android:id="@+id/write_order_txt_name"
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/write_order_img_thumb"
+                android:alpha="0.7"
+                android:gravity="left|center"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="#a16736"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/write_order_txt_count"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="724dp"
+            android:alpha="0.7"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#a16736"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/write_order_txt_price"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="787dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#a16736"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/write_order_txt_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="963dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#a16736"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/write_order_btn_cancel"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:text="@string/write_order_btn_back"
+            android:textSize="@dimen/detail_btn_size"
+            android:alpha="0.7"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:background="@drawable/detail_btn_selector"/>
+
+        <Button
+            android:id="@+id/write_order_btn_sure"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/write_order_btn_check"
+            android:textSize="@dimen/detail_btn_size"
+            android:alpha="0.7"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:background="@drawable/detail_btn_selector"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

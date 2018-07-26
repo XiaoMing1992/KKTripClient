@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/video_relative_fast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/video_img_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_forward"
+            />
+
+        <ImageView
+            android:id="@+id/video_img_backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_backward"
+            />
+
+        <TextView
+            android:id="@+id/video_txt_fasttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_img_forward"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="#ffffff"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/video_img_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/video_pause"
+        android:visibility="invisible"/>
+
+
+    <RelativeLayout
+        android:id="@+id/video_relative_playbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/video_bottom_bg"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/video_progress"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_alignParentTop="true"
+            android:progressDrawable="@drawable/video_progressbar"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/video_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/video_txt_curtiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:includeFontPadding="false"
+                android:text="222"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:id="@+id/video_txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:alpha="0.5"
+                android:includeFontPadding="false"
+                android:text="2222"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

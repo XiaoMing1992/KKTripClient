@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">Trip</string>
+
+    <!-- 我的 -->
+    <string name="my_name">与我有关</string>
+    <string name="my_collect">Collection</string>
+    <string name="my_order">Order</string>
+    <string name="my_setting">Settings</string>
+
+    <!--订单管理页-->
+    <string name="order_number">order number</string>
+    <string name="order_info">order information</string>
+    <string name="order_amount">quantity</string>
+    <string name="order_money">order amount</string>
+    <string name="order_state">order status</string>
+    <string name="order_state_make">The order was created</string>
+    <string name="order_state_pay">The order was paid</string>
+    <string name="order_state_confirm">Businesses have been confirmed</string>
+    <string name="order_state_done">Order has been completed</string>
+    <string name="order_state_out">Order has been overdue</string>
+    <string name="order_cancel">Cancel</string>
+    <string name="order_delete">Confirm Delete</string>
+    <string name="order_can_not_delete">The order is not to travel</string>
+    <string name="order_delete_fail">Delete the order failed</string>
+    <string name="order_click_menu">Press the menu button to delete the order</string>
+    <string name="order_loading_name">Loading…</string>
+    <string name="order_load_failure1">Failed to get the order~</string>
+    <string name="order_load_failure2">Please check network and retry</string>
+
+    <!--订单详情页-->
+    <string name="manage_order_item_detail_title">Order details</string>
+    <string name="manage_order_item_number">order number:</string>
+    <string name="manage_order_item_money_title">sum</string>
+    <string name="manage_order_item_user_info">User info</string>
+    <string name="manage_order_item_user_name">Name:</string>
+    <string name="manage_order_item_user_addr">Address:</string>
+    <string name="manage_order_item_user_phone">Phone:</string>
+    <string name="manage_order_item_continue_pay">Buy</string>
+    <string name="manage_order_item_cancel_order">Cancel</string>
+    <string name="manage_order_item_company_phone">Service tel:0755-86711710</string>
+
+    <!--收藏页-->
+    <string name="collect_empty">You did not collect any route~</string>
+    <string name="collect_go">Browse route</string>
+    <string name="cancel_collect">cancel collection</string>
+    <string name="old_collect">off-shelve</string>
+    <string name="clear_old_collect">Empty the off-shelve route</string>
+    <string name="tip_cancel_collect">Press the menu button to cancel collection</string>
+    <string name="collect_load_failure1">Failed to get the collection~</string>
+    <string name="collect_load_failure2">Please check network and retry</string>
+
+    <!--设置详情页-->
+    <string name="setting">Settings</string>
+    <string name="setting_login">Account</string>
+    <string name="setting_version">Update</string>
+    <string name="setting_info">About</string>
+
+    <string name="setting_about_qrcode_tv1">call me</string>
+    <string name="setting_about_qrcode_tv2">If you have any problem, call me please</string>
+
+    <string name="setting_info_description">About Us</string>
+    <string name="setting_click_login">Not login</string>
+    <string name="setting_click_modify">Modify</string>
+    <string name="setting_click_logout">Quit</string>
+    <string name="setting_install_new_version">There is a new version, click to install</string>
+    <string name="setting_newest_version">It is the latest version</string>
+    <string name="setting_description">Check Introductions</string>
+    <string name="setting_user_info_failed">User info error</string>
+
+    <!--网络异常提示-->
+    <string name="network_exception_hint">Network anomalies, please check the network</string>
+
+    <!--活动弹窗-->
+    <string name="pop_activity_view_details">See details</string>
+    <string name="pop_activity_loading_hint">Loading...</string>
+
+    <!--升级弹窗-->
+    <string name="upgrade_title">Upgrade</string>
+    <string name="upgrade_update">update</string>
+
+    <!--修改账号弹窗-->
+    <string name="account_modify">Scan QR code and change account information</string>
+    <string name="account_logout">Log Out</string>
+    <string name="account_logout_failed">Log Out Failure</string>
+    <string name="account_logout_title">The current account</string>
+    <string name="account_logout_content">Click「忘记密码」in the mobile login screen，you can change password</string>
+
+    <!--登录弹窗-->
+    <string name="login_scan">Scan code to login</string>
+    <string name="scan_success">Scan code success</string>
+    <string name="login_success">Login successfully</string>
+    <string name="login_url_fail">Failed to get qr code</string>
+    <string name="login_fail">Longin failed</string>
+
+
+    <!-- 首页 -->
+    <string name="ad_time">s</string>
+    <string name="loading_text">Loading…</string>
+    <string name="error_name">Error</string>
+    <string name="error_title">There is no data</string>
+    <string name="error_title_video">Play video error</string>
+    <string name="error_no_network">Please check network and retry</string>
+
+    <!-- 分类页 -->
+    <string name="category_list_name">Category</string>
+    <string name="category_list_name_route">Route</string>
+    <string name="category_list_name_ticket">Ticket</string>
+    <string name="category_item_name">Name</string>
+    <string name="category_item_price">¥</string>
+    <string name="category_loading_name">Loading…</string>
+
+    <!-- 推荐弹窗页 -->
+    <string name="recommend_dialog_ok">In</string>
+    <string name="recommend_dialog_cancel">Out</string>
+
+    <!-- 退出弹窗页 -->
+    <string name="exit_dialog_title">Exit</string>
+    <string name="exit_dialog_content">Do you want to exit App?</string>
+    <string name="exit_dialog_ok">OK</string>
+    <string name="exit_dialog_cancel">Cancel</string>
+
+    <!--详情页-->
+    <string name="detail_grade">Grade</string>
+    <string name="detail_price_rmb">¥</string>
+    <string name="detail_price_start">start</string>
+    <string name="detail_price_oldprice">¥%1$s</string>
+    <string name="detail_start_time">Departure Time:</string>
+    <string name="detail_business_time">Business hours:</string>
+    <string name="detail_phone">Customer Service Phone:</string>
+    <string name="detail_btn_buy">Buy Now</string>
+    <string name="detail_btn_save">collect</string>
+    <string name="detail_btn_saved">collected</string>
+    <string name="detail_shade_menu">Press menu key for details</string>
+    <string name="detail_shade_btn">Check the details</string>
+    <string name="detail_data_error">Goods data error</string>
+
+    <!--视频页-->
+    <string name="video_up_coming">coming\t%1$s</string>
+    <string name="video_loading_tip">loading...</string>
+    <string name="video_no_data">Please check network and retry</string>
+
+    <!--填写信息页-->
+    <string name="write_title">Fill In Information</string>
+    <string name="write_good_name">Good：</string>
+    <string name="write_good_price">Price：</string>
+    <string name="write_good_price_yuan">Yuan</string>
+    <string name="write_good_num">Count：</string>
+    <string name="write_good_address">Place of Departure：</string>
+    <string name="write_user_name">Name：</string>
+    <string name="write_user_phone">Mobile Phone：</string>
+    <string name="write_good_total">Amount：</string>
+    <string name="write_btn_sure">Sure</string>
+    <string name="write_btn_cancel">Cancel</string>
+    <string name="write_tip_title">WARM PROMPT：</string>
+    <string name="write_select_city">Select the city</string>
+    <string name="write_select_count">Select the number</string>
+    <string name="write_edit_hint_name">Please enter the name of the purchaser</string>
+    <string name="write_edit_hint_phone">Please enter the correct mobile number</string>
+    <string name="write_toast_noname">*&#160;&#160;Please enter the name of the purchaser</string>
+    <string name="write_toast_phone_novild">*&#160;&#160;Please enter the correct mobile number</string>
+    <string name="write_pay_tip">Please be patient and wait for the staff to contact you</string>
+    <string name="write_order_title">You have purchased the success, the order number：%1$s</string>
+    <string name="write_order_btn_back">return</string>
+    <string name="write_order_btn_check">check an order</string>
+    <string name="write_tip_content">·Within 48 hours after the success of the order, you will be contacted and signed by the customer service staff\n·If in doubt, please contact 0755-86711710 for consultation</string>
+    <string name="write_pay_failure">payment failure</string>
+    <string name="write_protocol_read">I have read and agreed</string>
+    <string name="write_protocol_title"><u>《易起浪旅游产品购买协议》</u></string>
+    <string name="write_protocol_agreee">Please agree to the agreement before confirming the purchase</string>
+    <string name="protocol_title">易起浪旅游产品购买协议</string>
+    <string name="order_confirm_title">Please confirm your order information</string>
+    <string name="order_confirm_good_title">Commodity information</string>
+    <string name="order_confirm_user_title">The user information</string>
+    <string name="order_confirm_btn_buy">buy now</string>
+    <string name="order_confirm_btn_abandon">give up</string>
+    <string name="order_confirm_user_name">name</string>
+    <string name="order_confirm_user_phone">phone</string>
+    <string name="order_confirm_user_time">The time of departure</string>
+    <string name="order_confirm_user_address">The place of departure</string>
+    <string name="order_confirm_state_no_pay">unpaid</string>
+
+    <string name="protocol_content">特别提示：易起浪的旅游产品均由具备资质的第三方供应商提供。第三方供应商充分借用易起浪的网络预订平台，推出全方位的旅游产品，产品的行程安排以及合同签订都是由合作第三方供应商为您提供。易起浪APP<b>作为您获取旅游产品的平台，本协议的签署并不意味着易起浪APP成为旅游产品交易的参与者，对前述交易易起浪APP仅提供技术支持。旅游行程中如发生争议、纠纷与赔偿处理，由您与第三方公司自行处理。</b>\n\n
+    在预订由易起浪APP为您展示的旅游产品前，请您仔细阅读本协议，<b>当您开始预订旅游产品时，即表明您已经仔细阅读并接受本协议的所有条款。</b>\n\n
+        <b>第一条&#160;&#160;本APP所售卖的旅游产品内容及其标准</b>\n
+        1.本APP所售卖的旅游产品内容主要包含：门票、住宿、旅游路线服务及其他服务。具体产品的最终包含内容以确认的订单约定内容为准。\n
+        2.易起浪APP中关于旅游产品的行程推荐仅为友情提示，不能作为约定条款或任何要约。\n
+        3.旅游产品中约定的产品和服务内容，均为供应商提供，在您消费过程中可能涉及的具体产品和服务内容责任应由您与产品供应商协商确认。\n\n
+        <b>第二条&#160;&#160;旅游产品价格</b>\n
+        易起浪APP中所展示的产品价格仅为参考价格，由于旅游产品价格的时效性和波动性，第三方供应商可能因为机票、酒店的价格变动而适度调整其在易起浪APP上已公布的旅游产品的价格。您预订的所有旅游产品的价格，以第三方供应商与您最后确认的金额为准。\n\n
+        <b>第三条&#160;&#160;订单确认与服务合同的生效</b>\n
+        1.为充分保证您的合法权益，您如要了解路线详情，请在付款购买前咨询对应供应商的客服。如对退款等流程有问题，请咨询易起浪客服0755-86711710。\n
+        2.在购买信息填写页面，请认真填写个人信息，若填写有误，易起浪APP除提供相关查询协助外不承担任何责任。\n
+        3.下单完成后48小时内，会有相应的供应商客服联系您并且拟定相关协议。\n
+        4.订单生效后，如您有任何变更、解除的请求，需与您的供应商直接联系协商，协商不成的，应按照合同约定和法律法规有关规定处理。\n\n
+        <b>第四条&#160;&#160;您的权利和义务</b>\n
+        1.您应确保出行人身体条件适合本次外出旅游度假，如出行人为孕妇或有心脏病、高血压、呼吸系统疾病等病史，请在征得医院专业医生同意后出行。\n
+        2.您保证提供给供应商的证件、通讯方式、配送地址等相关资料均真实、有效。\n
+        3.度假期间，您应尊重当地的宗教信仰、民族习惯和风土人情，自觉保护当地自然环境。\n
+        4.您应遵守《易起浪APP用户服务协议》。您必须通过易起浪APP预订并通过易起浪APP界面支付全部旅游款给供应商。如您需要退款请直接联系产品供应商，易起浪APP将协助产品供应商为您完成退款事宜。\n
+        5.您在旅游过程中如对第三方供应商的服务质量有异议，应积极与第三方供应商沟通积极争取在旅游过程中解决。\n
+        6.您可以选择通过易起浪APP或第三方供应商投诉电话进行投诉。\n
+        7.为了保护您的权利，积极与产品供应商联系，并对您与产品供应商使用该电话通话的全过程进行录音,并保存为证据,必要时用来维护您的合法权益。\n\n
+        <b>第五条&#160;&#160;涉及第三方的相关责任</b>\n
+        第三方指在办理出境旅游度假事宜中涉及的发照机关、签证机关、航空公司、保险公司、境外接待社、饭店、同行团友及其他相关机构、企业和个人。对于易起浪APP无法控制，您与第三方出现的下列情况，可向易起浪APP请求协助办理，结果由您承担。\n
+        1.您在旅行中应注意人身财产安全，妥善保管自己的证件及行李物品， 如果发生人身意外、伤害或随身携带行李物品遗失、被盗、被抢等情况，易起浪APP有权利协助办理，但无赔偿之责任；补办证件所产生的费用，由您自行承担。解决的依据应以相关机构（如航空公司、酒店、保险公司）的规定为准。您必须保留有关单据和证明文件。\n
+        2.您违反相关国家或地区的法律、法规而被罚、被拘留、遣返及被追究其他刑事、民事责任的，您应依法承担相关责任和费用。\n
+        3.是否发放护照、签证，是否准予出入境，系有关国家机构之权力，您应按要求提供真实的资料，供应商可协助办理。但因您自身原因导致不能及时办理护照、签证而影响行程的，以及被相关机关拒发护照、签证或拒绝入境的，您应承担全部责任，并应支付供应商的损失及费用。\n
+        4.因有关机构政策调整造成您的护照、签证延误，您需按约定承担已发生的费用。\n
+        5.您违反中华人民共和国及前往国家（地区）的有关规定，携带过量货币、物品或违禁品而产生的一切后果由您自行承担。\n\n
+        <b>第六条&#160;&#160;不可抗力</b>\n
+        1.因不可抗力(包括地震、台风、雷击、雪灾、水灾、火灾等自然原因,以及战争、政府行为、黑客攻击、电信部门技术管制等原因)和意外事件等原因不能履行或不能继续履行已生效订单约定内容的，双方均不承担违约责任，但法律另有规定的除外。\n
+        2.如果发生航班延误、航班取消等特殊情况，请及时致电供应商客服，由其为您联系您即将入住的酒店，尽量争取减少您的损失。\n
+        3.如果由于航空公司燃油涨价或是临时调价而导致的航线价格上涨，对于已成交的订单，不再向您收取涨价费用；对于已确认但未付款和未确认的订单，则以新价格为准。\n
+    </string>
+
+    <!--ijkplayer-->
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_window_protocol_bg"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="796dp"
+        android:layout_height="470dp"
+        android:background="@drawable/dialog_protocol_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:textSize="30sp"
+            android:textColor="#fefefe"
+            android:text="@string/protocol_title"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="80dp"
+            android:scrollbarThumbVertical="@drawable/dialog_protocol_scrollbar_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.6"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/protocol_content" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

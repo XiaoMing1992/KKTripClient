@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/pop_activity_black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_black"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/upgrade_title"
+            android:layout_marginTop="@dimen/upgrade_title_marginTop"
+            android:layout_width="@dimen/upgrade_title_width"
+            android:layout_height="wrap_content"
+            android:text="@string/upgrade_title"
+            android:gravity="start"
+            android:textSize="@dimen/default_32_sp"
+            android:textColor="@color/dialog_white"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:secondaryProgress="0"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/upgrade_content"
+            android:layout_width="@dimen/upgrade_content_width"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/upgrade_content_lineSpacingExtra"
+            android:gravity="start"
+            android:textColor="@color/dialog_white_light"
+            android:textSize="@dimen/default_24_sp"/>
+
+        <Button
+            android:id="@+id/upgrade_button"
+            android:layout_marginTop="@dimen/upgrade_button_marginTop"
+            android:layout_marginBottom="@dimen/upgrade_button_marginBottom"
+            android:background="@drawable/setting_bg_selector"
+            android:layout_width="@dimen/upgrade_button_width"
+            android:layout_height="@dimen/upgrade_button_height"
+            android:gravity="center"
+            android:text="@string/upgrade_update"
+            android:textColor="@color/button_text"
+            android:textSize="@dimen/default_24_sp"/>
+    </LinearLayout>
+
+</LinearLayout>

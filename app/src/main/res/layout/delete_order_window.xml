@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_detail_cancel_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/order_detail_cancel_window_bg"
+        android:layout_width="1280dp"
+        android:layout_height="276dp">
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="提示"
+            android:textColor="@color/order_color2"
+            android:textSize="@dimen/default_28_sp"
+            />
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:text="确定要取消订单吗"
+            android:textColor="@color/order_color2"
+            android:textSize="@dimen/default_24_sp"
+            android:alpha="0.6"
+            android:layout_below="@+id/title"
+            />
+
+        <Button
+            android:layout_below="@+id/content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sure"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/cancel"
+            android:alpha="0.7"
+            android:textSize="@dimen/default_24_sp"
+            android:textColor="@color/order_color8"
+            android:text="确定"
+            android:background="@drawable/order_detail_cancel_window_btn_bg"
+            />
+
+        <Button
+            android:layout_below="@+id/content"
+            android:layout_marginTop="30dp"
+
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="280dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/default_24_sp"
+            android:textColor="@color/order_color8"
+            android:alpha="0.7"
+            android:text="取消"
+            android:background="@drawable/order_detail_cancel_window_btn_bg"
+            />
+    </RelativeLayout>
+</LinearLayout>

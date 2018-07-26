@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.konka.kktripclient.ui.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_item_layout"
+    android:layout_width="@dimen/category_item_layout_width"
+    android:layout_height="@dimen/category_item_layout_height"
+    android:background="@drawable/category_item_layout_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- 背景图 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/category_item_layout_bg" />
+
+    <!-- 上方区域 -->
+    <RelativeLayout
+        android:id="@+id/category_item_image"
+        android:layout_width="@dimen/category_item_image_width"
+        android:layout_height="@dimen/category_item_image_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/category_item_image_margin_top">
+
+        <!-- 图片 -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/category_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_top_left="@dimen/category_item_icon_corner"
+            app:riv_corner_radius_top_right="@dimen/category_item_icon_corner" />
+    </RelativeLayout>
+
+    <!-- 下方区域 -->
+    <RelativeLayout
+        android:id="@+id/category_item_text"
+        android:layout_width="@dimen/category_item_text_width"
+        android:layout_height="@dimen/category_item_text_height"
+        android:layout_below="@id/category_item_image"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/category_item_text_padding">
+
+        <!-- 名称 -->
+        <TextView
+            android:id="@+id/category_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/category_item_name"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/category_item_text_size" />
+
+        <!-- 价格 -->
+        <LinearLayout
+            android:id="@+id/category_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical">
+
+            <!-- 现价 -->
+            <TextView
+                android:id="@+id/category_item_discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/category_item_price"
+                android:textColor="@color/main_accent"
+                android:textSize="@dimen/category_item_discount_price_size" />
+
+            <!-- 原价 -->
+            <TextView
+                android:id="@+id/category_item_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/category_item_price_step"
+                android:alpha="0.7"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/category_item_price"
+                android:textColor="@color/main_primary"
+                android:textSize="@dimen/category_item_original_price_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.konka.kktripclient.ui.ScaleRelativeLayout>

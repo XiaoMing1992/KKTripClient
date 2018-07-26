@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000">
+
+    <com.konka.kktripclient.detail.customview.TripVideoView
+        android:id="@+id/video_activity_tripvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/video_linear_menu_tip"
+        android:layout_width="212dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/detail_shade_menu_bg"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/detail_shade_menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:alpha="0.8"
+            android:text="@string/detail_shade_menu"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/video_linear_shade"
+        android:layout_width="388dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_shade_bg"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/video_shade_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="#ffffff"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/video_shade_txt_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="12dp"
+            android:alpha="0.7"
+            android:includeFontPadding="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="@string/detail_start_time"/>
+
+            <TextView
+                android:id="@+id/video_shade_txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="@string/detail_phone"/>
+
+            <TextView
+                android:id="@+id/video_shade_txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:focusable="false"
+                android:text="@string/detail_grade"
+                android:includeFontPadding="false"/>
+
+            <com.konka.kktripclient.detail.customview.RatingBar
+                android:id="@+id/video_shade_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_grade_bar_marginLeft"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="@dimen/detail_grade_bar_size"
+                app:starPadding="@dimen/detail_grade_bar_padding"
+                app:starStep="5"
+                app:stepSize="Half"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_shade_txt_discount_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/detail_info_size"
+            android:textColor="#ffffff"
+            android:alpha="0.8"
+            android:focusable="false"
+            android:includeFontPadding="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_price_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:text="@string/detail_price_rmb"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:id="@+id/video_shade_txt_newprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_price_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:text="@string/detail_price_start"
+                android:includeFontPadding="false"/>
+
+
+
+            <TextView
+                android:id="@+id/video_shade_txt_oldprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_price_marginLeft"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#ffffff"
+                android:alpha="0.8"
+                android:focusable="false"
+                android:includeFontPadding="false"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/video_shade_img_thumb"
+            android:layout_width="260dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="32dp"/>
+
+
+        <Button
+            android:id="@+id/video_shade_btn_check"
+            android:layout_width="176dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/detail_shade_btn"
+            android:textSize="24sp"
+            android:textColor="@drawable/detail_btn_txt_selector"
+            android:background="@drawable/detail_btn_selector"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/video_relative_episode"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/video_episode_bg">
+
+
+        <com.konka.kktripclient.ui.AppRecyclerView
+            android:id="@+id/video_recycler_episode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:paddingLeft="64dp"
+            android:paddingStart="64dp"
+            android:paddingTop="32dp"
+            android:paddingEnd="0dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/video_activity_relative_error_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/error_page_video" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

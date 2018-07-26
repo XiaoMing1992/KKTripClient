@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <item android:state_focused="false" android:drawable="@drawable/collect_item_unfocus_bg"></item>
+    <item android:state_focused="true" android:drawable="@drawable/collect_item_focus_bg"></item>
+-->
+
+    <item android:state_focused="false" android:drawable="@drawable/my_collect_item_unfocus"></item>
+    <item android:state_focused="true" android:drawable="@drawable/my_collect_item_focus"></item>
+
+</selector>

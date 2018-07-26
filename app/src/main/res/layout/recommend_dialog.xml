@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recommend_dialog_bg_mask">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/recommend_dialog_image"
+        android:layout_width="@dimen/recommend_dialog_image_width"
+        android:layout_height="@dimen/recommend_dialog_image_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/recommend_dialog_image_margin_top"
+        android:src="@drawable/default_image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_dialog_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/recommend_dialog_button_margin_top">
+
+        <Button
+            android:id="@+id/recommend_dialog_ok"
+            android:layout_width="@dimen/recommend_dialog_button_width"
+            android:layout_height="@dimen/recommend_dialog_button_height"
+            android:background="@drawable/recommend_dialog_button_selector"
+            android:text="@string/recommend_dialog_ok"
+            android:textColor="@drawable/recommend_dialog_text_selector"
+            android:textSize="@dimen/recommend_dialog_button_size" />
+
+        <Button
+            android:id="@+id/recommend_dialog_cancel"
+            android:layout_width="@dimen/recommend_dialog_button_width"
+            android:layout_height="@dimen/recommend_dialog_button_height"
+            android:layout_marginStart="@dimen/recommend_dialog_button_step"
+            android:background="@drawable/recommend_dialog_button_selector"
+            android:text="@string/recommend_dialog_cancel"
+            android:textColor="@drawable/recommend_dialog_text_selector"
+            android:textSize="@dimen/recommend_dialog_button_size" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur">
+
+    <TextView
+        android:id="@+id/collect_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/collect_title_marginLeft"
+        android:layout_marginTop="@dimen/collect_title_marginTop"
+        android:text="@string/my_collect"
+        android:textColor="@color/collect_color3"
+        android:textSize="@dimen/collect_title_text" />
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/collect_menu_marginLeft"
+        android:layout_marginTop="@dimen/collect_menu_marginTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@drawable/collect_menu_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/collect_menu_tv_marginLeft"
+            android:alpha="0.8"
+            android:gravity="center_vertical"
+            android:text="@string/tip_cancel_collect"
+            android:textColor="@color/collect_color4"
+            android:textSize="@dimen/collect_clear_old_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_clear_old"
+        android:layout_width="@dimen/collect_clear_old_width"
+        android:layout_height="@dimen/collect_clear_old_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/collect_clear_old_marginRight"
+        android:layout_marginTop="@dimen/collect_clear_old_marginTop"
+        android:background="@drawable/clear_old_bg"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/collect_clear_old_img_marginLeft"
+            android:gravity="center_vertical"
+            android:src="@drawable/clear_icon_unfocus" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/collect_clear_old_tv_marginLeft"
+            android:layout_marginRight="@dimen/collect_clear_old_tv_marginRight"
+            android:gravity="center_vertical"
+            android:text="@string/clear_old_collect"
+            android:alpha="0.8"
+            android:textColor="@color/collect_color4"
+            android:textSize="@dimen/collect_clear_old_text" />
+    </LinearLayout>
+
+    <com.konka.kktripclient.ui.AppRecyclerView
+        android:id="@+id/collection_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/collect_collection_list_marginLeft"
+        android:layout_marginRight="@dimen/collect_collection_list_marginRight"
+        android:layout_marginTop="@dimen/collect_collection_list_marginTop"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="afterDescendants"
+        android:scrollbars="vertical">
+
+    </com.konka.kktripclient.ui.AppRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/collect_layout_empty_marginBottom"
+        android:layout_marginTop="@dimen/collect_layout_empty_marginTop"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_empty_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/empty_collect" />
+
+        <TextView
+            android:id="@+id/tv_empty_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_empty_collect"
+            android:layout_marginTop="@dimen/collect_layout_empty_tv_marginTop"
+            android:gravity="center"
+            android:text="@string/collect_empty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/collect_empty_text"
+            android:alpha="0.6"
+            />
+
+        <Button
+            android:id="@+id/bt_empty_collect"
+            android:layout_width="@dimen/collect_layout_empty_btn_width"
+            android:layout_height="@dimen/collect_layout_empty_btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_button_selected"
+            android:text="@string/collect_go"
+            android:textColor="@color/collect_color1"
+            android:textSize="@dimen/collect_empty_bt_text" />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/collect_progressbar_width"
+        android:layout_height="@dimen/collect_progressbar_height"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_checking"
+        android:indeterminateDuration="700"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/layout_loading"
+        layout="@layout/loading_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/collect_layout_loading_marginLeft"
+        android:layout_marginTop="@dimen/collect_layout_loading_marginTop"
+        android:visibility="gone">
+
+    </include>
+
+    <LinearLayout
+        android:id="@+id/layout_load_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/collect_layout_loading_fail_marginTop"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/load_failure" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/collect_layout_loading_fail_tv_marginTop1"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text="@string/collect_load_failure1"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_20_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/collect_layout_loading_fail_tv_marginTop2"
+            android:alpha="0.9"
+            android:gravity="center"
+            android:text="@string/collect_load_failure2"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_28_sp" />
+    </LinearLayout>
+
+</RelativeLayout>

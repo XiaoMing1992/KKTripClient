@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/about_title_layout_marginLeft"
+        android:layout_marginTop="@dimen/about_title_layout_marginTop">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/about_title_layout_img_marginTop"
+            android:src="@drawable/about_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/about_title_layout_tv_marginLeft"
+            android:text="@string/setting_info"
+            android:textColor="@color/other"
+            android:textSize="@dimen/about_title_layout_tv_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_qrcode_layout_marginTop"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/about_qrcode" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/about_qrcode_tv1_marginTop"
+            android:gravity="center"
+            android:text="@string/setting_about_qrcode_tv1"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_24_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/about_qrcode_tv2_marginTop"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:text="@string/setting_about_qrcode_tv2"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_20_sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

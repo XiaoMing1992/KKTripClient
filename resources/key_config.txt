@@ -1,0 +1,10 @@
+keystore password: com.konka.kktripclient
+alias: kktrip
+password: com.konka.kktripclient
+valid day: 50
+first and last name: Konka Team
+Organizational Unit: Global Multimedia Technology R&D Center
+Organization: Konka Group
+City: Shenzhen
+Province: Guangdong
+Country Code:86

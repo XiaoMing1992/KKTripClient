@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/my_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/manage_order_title_marginLeft"
+        android:layout_marginTop="@dimen/manage_order_title_marginTop"
+        android:text="@string/my_order"
+        android:textColor="@color/order_color1"
+        android:textSize="@dimen/manage_order_title_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="@dimen/manage_order_menu_layout_width"
+        android:layout_height="@dimen/manage_order_menu_layout_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/manage_order_menu_layout_marginLeft"
+        android:layout_marginTop="@dimen/manage_order_menu_layout_marginTop"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/manage_order_menu_layout_img_marginLeft"
+            android:gravity="center"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/manage_order_menu_layout_tv_marginLeft"
+            android:layout_marginRight="@dimen/manage_order_menu_layout_tv_marginRight"
+            android:layout_toRightOf="@+id/menu"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="@string/order_click_menu"
+            android:textColor="@color/order_color6"
+            android:textSize="@dimen/default_20_sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_1"
+        android:layout_marginTop="@dimen/manage_order_title_layout_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/order_title"
+            android:layout_width="@dimen/manage_order_title_layout_width"
+            android:layout_height="@dimen/manage_order_title_layout_height"
+            android:layout_marginLeft="@dimen/manage_order_title_layout_marginLeft"
+            android:background="@drawable/manage_order_bg"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:alpha="0.8"
+                android:text="@string/order_number"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_22_sp" />
+
+            <TextView
+                android:id="@+id/title_order_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/manage_order_title_layout_info_marginLeft"
+                android:alpha="0.8"
+                android:text="@string/order_info"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_22_sp" />
+
+            <TextView
+                android:id="@+id/title_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/manage_order_title_layout_amount_marginLeft"
+                android:alpha="0.8"
+                android:text="@string/order_amount"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_22_sp" />
+
+            <TextView
+                android:id="@+id/title_order_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/manage_order_title_layout_money_marginLeft"
+                android:alpha="0.8"
+                android:text="@string/order_money"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_22_sp" />
+
+            <TextView
+                android:id="@+id/title_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/manage_order_title_layout_state_marginLeft"
+                android:alpha="0.8"
+                android:text="@string/order_state"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_22_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_title"
+            android:layout_marginLeft="@dimen/manage_order_list_marginLeft"
+            android:layout_marginTop="@dimen/manage_order_list_marginTop">
+
+            <com.konka.kktripclient.ui.AppRecyclerView
+                android:id="@+id/order_list"
+                android:layout_width="@dimen/manage_order_list_width"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:descendantFocusability="afterDescendants"
+                android:scrollbars="vertical"></com.konka.kktripclient.ui.AppRecyclerView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+        <include
+            android:id="@+id/layout_loading"
+            layout="@layout/loading_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/manage_order_layout_loading_marginLeft"
+            android:layout_marginTop="@dimen/manage_order_layout_loading_marginTop"
+            android:visibility="gone">
+
+        </include>
+
+        <!--    <LinearLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="566dp"
+                android:layout_marginTop="268dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    android:layout_width="@dimen/manage_order_progressbar_width"
+                    android:layout_height="@dimen/manage_order_progressbar_height"
+                    android:indeterminateDrawable="@drawable/progress_checking"
+                    android:indeterminateDuration="700" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.7"
+                    android:gravity="center"
+                    android:text="@string/order_loading_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_20_sp" />
+            </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/layout_load_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/manage_order_layout_loading_fail_marginTop"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/load_failure" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/manage_order_layout_loading_fail_tv_marginTop1"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:text="@string/order_load_failure1"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_20_sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/manage_order_layout_loading_fail_tv_marginTop2"
+                android:alpha="0.9"
+                android:gravity="center"
+                android:text="@string/order_load_failure2"
+                android:textColor="@color/order_color1"
+                android:textSize="@dimen/default_28_sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/load_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_checking"
+            android:indeterminateDuration="700"
+            android:visibility="gone" />
+
+
+</RelativeLayout>

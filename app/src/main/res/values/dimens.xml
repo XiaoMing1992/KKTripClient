@@ -1,0 +1,457 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="HorizontalPageScrollView_DEFAULT_EDGE_OFFSET">80px</dimen>
+    <!-- my_page.xml -->
+    <dimen name="my_collect_button_layout_width">320dp</dimen>
+    <dimen name="my_collect_button_layout_height">232dp</dimen>
+    <dimen name="my_collect_button_marginTop">337dp</dimen>
+    <dimen name="my_collect_button_marginStart">481dp</dimen>
+    <dimen name="my_collect_icon_marginTop">38dp</dimen>
+    <dimen name="my_collect_icon_marginRight">12dp</dimen>
+    <dimen name="my_collect_button_TextView_marginBottom">36dp</dimen>
+    <dimen name="my_collect_button_TextView_marginLeft">36dp</dimen>
+    <dimen name="my_collect_button_TextView_textSize">28sp</dimen>
+
+    <dimen name="my_order_button_layout_width">320dp</dimen>
+    <dimen name="my_order_button_layout_height">232dp</dimen>
+    <dimen name="my_order_button_marginTop">310dp</dimen>
+    <dimen name="my_order_button_marginStart">158dp</dimen>
+    <dimen name="my_order_icon_marginTop">38dp</dimen>
+    <dimen name="my_order_icon_marginRight">12dp</dimen>
+    <dimen name="my_order_button_TextView_marginBottom">36dp</dimen>
+    <dimen name="my_order_button_TextView_marginLeft">36dp</dimen>
+    <dimen name="my_order_button_TextView_textSize">28sp</dimen>
+
+    <dimen name="my_settings_button_layout_width">320dp</dimen>
+    <dimen name="my_settings_button_layout_height">232dp</dimen>
+    <dimen name="my_settings_button_marginTop">304dp</dimen>
+    <dimen name="my_settings_button_marginStart">804dp</dimen>
+    <dimen name="my_settings_icon_marginTop">38dp</dimen>
+    <dimen name="my_settings_icon_marginRight">12dp</dimen>
+    <dimen name="my_settings_button_TextView_marginBottom">36dp</dimen>
+    <dimen name="my_settings_button_TextView_marginLeft">36dp</dimen>
+    <dimen name="my_settings_button_TextView_textSize">28sp</dimen>
+
+
+    <!--settingActivity-->
+    <dimen name="setting_guide_layout_marginLeft">26dp</dimen>
+    <dimen name="setting_guide_layout_marginTop">40dp</dimen>
+    <dimen name="setting_guide_layout_height">45dp</dimen>
+    <dimen name="setting_guide_text_marginLeft">15dp</dimen>
+    <dimen name="setting_item_layout_width">734dp</dimen>
+    <dimen name="setting_item_layout_height">64dp</dimen>
+    <dimen name="setting_item_login_marginTop">216dp</dimen>
+    <dimen name="setting_item_icon_marginRight">36dp</dimen>
+    <dimen name="setting_item_title_marginLeft">36dp</dimen>
+    <dimen name="setting_item_title_marginRight">16dp</dimen>
+    <dimen name="setting_item_hint_width">230dp</dimen>
+    <dimen name="setting_item_marginTop">48dp</dimen>
+
+    <!--loginWindow-->
+    <dimen name="loginWindow_layout_marginTop">180dp</dimen>
+    <dimen name="loginWindow_layout_height">373.33dp</dimen>
+    <dimen name="login_qrcode_layout_marginTop">31dp</dimen>
+    <dimen name="login_qrcode_width">328dp</dimen>
+    <dimen name="login_qrcode_height">328dp</dimen>
+    <dimen name="login_qrcode_marginTop">18.67dp</dimen>
+    <dimen name="login_text_marginTop">112dp</dimen>
+    <dimen name="login_tip_text_marginTop">4dp</dimen>
+    <dimen name="login_text_width">266.67dp</dimen>
+    <dimen name="login_loading_marginTop">100dp</dimen>
+    <dimen name="login_success_layout_marginTop">160dp</dimen>
+    <dimen name="login_success_layout_height">373.33dp</dimen>
+    <dimen name="login_success_icon_width">93.33dp</dimen>
+    <dimen name="login_success_icon_height">93.33dp</dimen>
+    <dimen name="login_success_text_marginTop">60dp</dimen>
+
+    <!--accountWindow-->
+    <dimen name="account_text_width">570dp</dimen>
+    <dimen name="account_text1_marginTop">248dp</dimen>
+    <dimen name="account_text1_marginBottom">0dp</dimen>
+
+    <dimen name="account_text2_marginTop">24dp</dimen>
+    <dimen name="account_text_lineSpacingExtra">14.67dp</dimen>
+    <dimen name="account_button_marginTop">33.33dp</dimen>
+    <dimen name="account_button_marginBottom">33.33dp</dimen>
+    <dimen name="account_button_width">176dp</dimen>
+    <dimen name="account_button_height">53dp</dimen>
+    <dimen name="account_qrcode_width">200dp</dimen>
+    <dimen name="account_qrcode_height">200dp</dimen>
+    <dimen name="account_qrcode_marginTop">33.33dp</dimen>
+    <dimen name="account_hint_width">200dp</dimen>
+    <dimen name="account_hint_marginTop">18.67dp</dimen>
+
+    <!--upgradeWindow-->
+    <dimen name="upgrade_title_marginTop">33.33dp</dimen>
+    <dimen name="upgrade_title_width">706.67dp</dimen>
+    <dimen name="upgrade_content_width">706.67dp</dimen>
+    <dimen name="upgrade_content_lineSpacingExtra">14.67dp</dimen>
+    <dimen name="upgrade_button_marginTop">33.33dp</dimen>
+    <dimen name="upgrade_button_marginBottom">33.33dp</dimen>
+    <dimen name="upgrade_button_width">161.33dp</dimen>
+    <dimen name="upgrade_button_height">48dp</dimen>
+
+    <!--aboutInfoWindow-->
+    <dimen name="aboutInfo_layout_marginTop">110dp</dimen>
+    <dimen name="aboutInfo_layout_width">775.67dp</dimen>
+    <dimen name="aboutInfo_text1_marginTop">26.67dp</dimen>
+    <dimen name="aboutInfo_text2_marginTop">14.67dp</dimen>
+    <dimen name="aboutInfo_text2_lineSpacingExtra">14.67dp</dimen>
+    <dimen name="aboutInfo_qrcode_marginTop">46.67dp</dimen>
+    <dimen name="aboutInfo_qrcode_width">200dp</dimen>
+    <dimen name="aboutInfo_qrcode_height">200dp</dimen>
+    <dimen name="aboutInfo_contact_width">200dp</dimen>
+    <dimen name="aboutInfo_contact_marginTop">27dp</dimen>
+    <dimen name="aboutInfo_tel_part_width">344dp</dimen>
+    <dimen name="aboutInfo_tel_icon_width">93.33dp</dimen>
+    <dimen name="aboutInfo_tel_icon_height">93.33dp</dimen>
+    <dimen name="aboutInfo_tel_icon_marginTop">50dp</dimen>
+    <dimen name="aboutInfo_tel_text_marginTop">29.33dp</dimen>
+    <dimen name="aboutInfo_tel_num_marginTop">22.67dp</dimen>
+    <dimen name="aboutInfo_yixue_part_width">344dp</dimen>
+    <dimen name="aboutInfo_yixue_icon_width">93.33dp</dimen>
+    <dimen name="aboutInfo_yixue_icon_height">93.33dp</dimen>
+    <dimen name="aboutInfo_yixue_icon_marginTop">50dp</dimen>
+    <dimen name="aboutInfo_yixue_text_marginTop">29.33dp</dimen>
+    <dimen name="aboutInfo_yixue_version_marginTop">22.67dp</dimen>
+
+    <!--for text size-->
+    <dimen name="default_20_sp">20sp</dimen>
+    <dimen name="default_22_sp">22sp</dimen>
+    <dimen name="default_24_sp">24sp</dimen>
+    <dimen name="default_26_sp">26sp</dimen>
+    <dimen name="default_28_sp">28sp</dimen>
+    <dimen name="default_32_sp">32sp</dimen>
+
+    <!--use in CollectActivity activity-->
+    <dimen name="collect_item_dividerHeight">11dp</dimen>
+    <dimen name="collect_item_dividerWidth">7dp</dimen>
+
+    <!-- 广告页 -->
+    <dimen name="ad_text_width">80dp</dimen>
+    <dimen name="ad_text_height">35dp</dimen>
+    <dimen name="ad_text_margin">30dp</dimen>
+    <dimen name="ad_text_size">21sp</dimen>
+
+    <!-- 首页tab的button布局 -->
+    <dimen name="tab_button_scrollview_margin_top">140dp</dimen>
+    <dimen name="tab_button_scrollview_padding">64dp</dimen>
+    <dimen name="tab_button_name_size">28sp</dimen>
+    <dimen name="tab_button_name_size_big">36sp</dimen>
+
+    <!-- 首页RecommendIcon布局 -->
+    <dimen name="recommend_icon_margin">40dp</dimen>
+    <dimen name="recommend_icon_title_height">40dp</dimen>
+    <dimen name="recommend_icon_title_padding_horizontal">16dp</dimen>
+    <dimen name="recommend_icon_title_padding_vertical">10dp</dimen>
+    <dimen name="recommend_icon_title_size">18sp</dimen>
+    <dimen name="recommend_icon_second_title_height">66dp</dimen>
+    <dimen name="recommend_icon_second_title_size">15sp</dimen>
+    <dimen name="recommend_icon_step">12dp</dimen>
+
+    <!-- 推荐弹窗 -->
+    <dimen name="recommend_dialog_image_width">842dp</dimen>
+    <dimen name="recommend_dialog_image_height">474dp</dimen>
+    <dimen name="recommend_dialog_image_margin_top">96dp</dimen>
+    <dimen name="recommend_dialog_button_width">150dp</dimen>
+    <dimen name="recommend_dialog_button_height">47dp</dimen>
+    <dimen name="recommend_dialog_button_margin_top">40dp</dimen>
+    <dimen name="recommend_dialog_button_step">20dp</dimen>
+    <dimen name="recommend_dialog_button_size">24sp</dimen>
+
+    <!-- 退出弹窗 -->
+    <dimen name="exit_dialog_height">312dp</dimen>
+    <dimen name="exit_dialog_padding_horizontal">280dp</dimen>
+    <dimen name="exit_dialog_title_margin_top">60dp</dimen>
+    <dimen name="exit_dialog_title_size">28sp</dimen>
+    <dimen name="exit_dialog_content_margin_top">24dp</dimen>
+    <dimen name="exit_dialog_content_size">24sp</dimen>
+    <dimen name="exit_dialog_button_margin_bottom">68dp</dimen>
+
+    <!-- 分类页 -->
+    <dimen name="category_item_divider_width">28dp</dimen>
+    <dimen name="category_item_divider_height">28dp</dimen>
+
+    <dimen name="category_list_content_width">254dp</dimen>
+    <dimen name="category_list_title_margin_top">38dp</dimen>
+    <dimen name="category_list_title_margin_bottom">38dp</dimen>
+    <dimen name="category_list_title_size">32sp</dimen>
+    <dimen name="category_loading_layout_margin_top">240dp</dimen>
+    <dimen name="category_error_layout_margin_top">230dp</dimen>
+    <dimen name="category_item_margin_bottom">64dp</dimen>
+    <dimen name="category_item_margin_end">80dp</dimen>
+    <dimen name="category_item_margin_start">52dp</dimen>
+    <dimen name="category_item_margin_top">64dp</dimen>
+
+    <!-- 分类页list属性 -->
+    <dimen name="category_list_layout_height">66dp</dimen>
+    <dimen name="category_list_name_size">28sp</dimen>
+
+    <!-- 分类页item属性 -->
+    <dimen name="category_item_layout_width">270dp</dimen>
+    <dimen name="category_item_layout_height">238dp</dimen>
+    <dimen name="category_item_image_width">260dp</dimen>
+    <dimen name="category_item_image_height">146dp</dimen>
+    <dimen name="category_item_image_margin_top">4dp</dimen>
+    <dimen name="category_item_icon_corner">4dp</dimen>
+    <dimen name="category_item_text_width">260dp</dimen>
+    <dimen name="category_item_text_height">82dp</dimen>
+    <dimen name="category_item_text_padding">12dp</dimen>
+    <dimen name="category_item_text_size">20sp</dimen>
+    <dimen name="category_item_price_step">12dp</dimen>
+    <dimen name="category_item_discount_price_size">22sp</dimen>
+    <dimen name="category_item_original_price_size">16sp</dimen>
+
+    <!-- 加载页 -->
+    <dimen name="loading_text_margin_top">10dp</dimen>
+    <dimen name="loading_text_size">20sp</dimen>
+
+    <!-- 错误页 -->
+    <dimen name="error_title_margin_top">24dp</dimen>
+    <dimen name="error_title_size">28sp</dimen>
+
+    <!-- 控件库toast布局 -->
+    <dimen name="toast_layout_padding_horizontal">66dp</dimen>
+    <dimen name="toast_layout_padding_bottom">40dp</dimen>
+    <dimen name="toast_layout_padding_top">34dp</dimen>
+    <dimen name="toast_layout_margin_bottom">36dp</dimen>
+    <dimen name="toast_layout_text_size">22sp</dimen>
+
+    <!-- 订单管理主页 -->
+    <dimen name="manage_order_title_marginTop">58dp</dimen>
+    <dimen name="manage_order_title_marginLeft">112dp</dimen>
+    <dimen name="manage_order_title_size">32sp</dimen>
+    <dimen name="manage_order_title_layout_width">1081dp</dimen>
+    <dimen name="manage_order_title_layout_height">78dp</dimen>
+    <dimen name="manage_order_title_layout_marginTop">5dp</dimen>
+    <dimen name="manage_order_title_layout_marginLeft">99dp</dimen>
+    <dimen name="manage_order_title_layout_number_marginLeft">12dp</dimen>
+    <dimen name="manage_order_title_layout_info_marginLeft">200dp</dimen>
+    <dimen name="manage_order_title_layout_amount_marginLeft">672dp</dimen>
+    <dimen name="manage_order_title_layout_money_marginLeft">767dp</dimen>
+    <dimen name="manage_order_title_layout_state_marginLeft">913dp</dimen>
+    <dimen name="manage_order_list_width">1141dp</dimen>
+    <dimen name="manage_order_list_marginLeft">99dp</dimen>
+    <dimen name="manage_order_list_marginTop">-14dp</dimen>
+    <dimen name="manage_order_menu_layout_width">215dp</dimen>
+    <dimen name="manage_order_menu_layout_height">40dp</dimen>
+    <dimen name="manage_order_menu_layout_marginLeft">112dp</dimen>
+    <dimen name="manage_order_menu_layout_marginTop">60dp</dimen>
+    <dimen name="manage_order_menu_layout_img_marginLeft">12dp</dimen>
+    <dimen name="manage_order_menu_layout_tv_marginLeft">6dp</dimen>
+    <dimen name="manage_order_menu_layout_tv_marginRight">12dp</dimen>
+    <dimen name="manage_order_progressbar_width">146dp</dimen>
+    <dimen name="manage_order_progressbar_height">146dp</dimen>
+    <dimen name="manage_order_layout_loading_marginLeft">566dp</dimen>
+    <dimen name="manage_order_layout_loading_marginTop">268dp</dimen>
+    <dimen name="manage_order_layout_loading_fail_marginTop">268dp</dimen>
+    <dimen name="manage_order_layout_loading_fail_tv_marginTop1">36dp</dimen>
+    <dimen name="manage_order_layout_loading_fail_tv_marginTop2">16dp</dimen>
+
+    <!-- 订单管理item详情页 -->
+    <dimen name="manage_order_item_detail_title_text">32sp</dimen>
+    <dimen name="manage_order_item_order_number_text">20sp</dimen>
+    <dimen name="manage_order_item_order_number_marginLeft">-2dp</dimen>
+    <dimen name="manage_order_item_layout_state_img_margin_top">196dp</dimen>
+    <dimen name="manage_order_item_layout_state_text_margin_top">254dp</dimen>
+    <dimen name="manage_order_item_order_info_line1_margin_top">330dp</dimen>
+    <dimen name="manage_order_item_order_info_line2_margin_top">480dp</dimen>
+    <dimen name="manage_order_item_user_text_margin_top">516dp</dimen>
+    <dimen name="manage_order_item_pay_margin_top">516dp</dimen>
+    <dimen name="manage_order_item_status_text">24sp</dimen>
+    <dimen name="manage_order_item_user_text">20sp</dimen>
+    <dimen name="manage_order_item_user_title_text">24sp</dimen>
+    <dimen name="manage_order_item_company_phone_text">20sp</dimen>
+    <dimen name="manage_order_item_dividerHeight">-10dp</dimen>
+    <dimen name="manage_order_item_dividerWidth">0dp</dimen>
+    <dimen name="manage_order_item_width">1081dp</dimen>
+    <dimen name="manage_order_item_height">195dp</dimen>
+    <dimen name="manage_order_item_info_layout_marginLeft">198dp</dimen>
+    <dimen name="manage_order_item_info_layout_img_width">128dp</dimen>
+    <dimen name="manage_order_item_info_layout_img_height">72dp</dimen>
+    <dimen name="manage_order_item_info_layout_tv_width">298dp</dimen>
+    <dimen name="manage_order_item_info_layout_tv_height">72dp</dimen>
+    <dimen name="manage_order_item_info_layout_tv_marginLeft">18dp</dimen>
+    <dimen name="manage_order_item_amount_marginLeft">678dp</dimen>
+    <dimen name="manage_order_item_price_marginLeft">767dp</dimen>
+    <dimen name="manage_order_item_state_marginLeft">913dp</dimen>
+    <dimen name="manage_order_item_delete_layout_width">232dp</dimen>
+    <dimen name="manage_order_item_delete_width">216dp</dimen>
+    <dimen name="manage_order_item_delete_height">62dp</dimen>
+    <dimen name="manage_order_item_delete_marginRight">8dp</dimen>
+    <dimen name="manage_order_item_delete_marginLeft">8dp</dimen>
+    <dimen name="manage_order_item_delete_marginTop">6dp</dimen>
+    <dimen name="manage_order_item_detail_title_marginLeft">112dp</dimen>
+    <dimen name="manage_order_item_detail_title_marginTop">64dp</dimen>
+    <dimen name="manage_order_item_detail_title_layout_marginLeft">112dp</dimen>
+    <dimen name="manage_order_item_detail_title_layout_marginTop">138dp</dimen>
+    <dimen name="manage_order_item_detail_state_layout_marginLeft">156dp</dimen>
+    <dimen name="manage_order_item_detail_state_layout_marginTop">196dp</dimen>
+    <dimen name="manage_order_item_detail_state_width">32dp</dimen>
+    <dimen name="manage_order_item_detail_state_height">32dp</dimen>
+    <dimen name="manage_order_item_detail_state_line_width">277dp</dimen>
+    <dimen name="manage_order_item_detail_state_line_height">4dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_layout_marginLeft">112dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_layout_marginTop">254dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_height">32dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_pay_marginLeft">189dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_confirm_marginLeft">189dp</dimen>
+    <dimen name="manage_order_item_detail_state_tv_done_marginLeft">189dp</dimen>
+    <dimen name="manage_order_item_detail_info_line_marginLeft">112dp</dimen>
+    <dimen name="manage_order_item_detail_info_line_width">1056dp</dimen>
+    <dimen name="manage_order_item_detail_info_line_height">1dp</dimen>
+    <dimen name="manage_order_item_detail_info_line_marginRight">-2dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_img_width">128dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_img_height">72dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_marginRight">112dp</dimen>
+
+    <dimen name="manage_order_item_detail_info_layout_width">1081dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_height">176dp</dimen>
+
+    <dimen name="manage_order_item_detail_info_layout_marginLeft">98dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_marginTop">317dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_money_marginLeft">656dp</dimen>
+
+    <dimen name="manage_order_item_detail_order_info_layout_marginLeft">52dp</dimen>
+    <dimen name="manage_order_item_detail_info_price_marginRight">53dp</dimen>
+
+    <dimen name="manage_order_item_detail_info_layout_name_height">72dp</dimen>
+    <dimen name="manage_order_item_detail_info_layout_name_marginLeft">18dp</dimen>
+    <dimen name="manage_order_item_detail_user_text_marginTop">516dp</dimen>
+    <dimen name="manage_order_item_detail_user_text_marginLeft">112dp</dimen>
+    <dimen name="manage_order_item_detail_user_name_marginTop">10dp</dimen>
+    <dimen name="manage_order_item_detail_user_addr_marginTop">2dp</dimen>
+    <dimen name="manage_order_item_detail_user_phone_marginTop">2dp</dimen>
+    <dimen name="manage_order_item_detail_menu_marginLeft">892dp</dimen>
+    <dimen name="manage_order_item_detail_pay_btn_width">164dp</dimen>
+    <dimen name="manage_order_item_detail_pay_btn_height">53dp</dimen>
+    <dimen name="manage_order_item_detail_pay_btn_marginTop">14dp</dimen>
+    <dimen name="manage_order_item_detail_phone_marginRight">112dp</dimen>
+    <dimen name="manage_order_item_detail_phone_marginBottom">30dp</dimen>
+
+
+    <!-- 收藏主页 -->
+    <dimen name="collect_clear_old_text">20sp</dimen>
+    <dimen name="collect_title_text">28sp</dimen>
+    <dimen name="collect_empty_text">21sp</dimen>
+    <dimen name="collect_empty_bt_text">24sp</dimen>
+    <dimen name="collect_title_marginLeft">80dp</dimen>
+    <dimen name="collect_title_marginTop">64dp</dimen>
+    <dimen name="collect_menu_marginLeft">542dp</dimen>
+    <dimen name="collect_menu_marginTop">68dp</dimen>
+    <dimen name="collect_menu_tv_marginLeft">13dp</dimen>
+    <dimen name="collect_clear_old_width">200dp</dimen>
+    <dimen name="collect_clear_old_height">40dp</dimen>
+    <dimen name="collect_clear_old_marginRight">84dp</dimen>
+    <dimen name="collect_clear_old_marginTop">56dp</dimen>
+    <dimen name="collect_clear_old_img_marginLeft">14dp</dimen>
+    <dimen name="collect_clear_old_tv_marginLeft">14dp</dimen>
+    <dimen name="collect_clear_old_tv_marginRight">14dp</dimen>
+    <dimen name="collect_collection_list_marginRight">60dp</dimen>
+    <dimen name="collect_collection_list_marginTop">102dp</dimen>
+    <dimen name="collect_collection_list_marginLeft">64dp</dimen>
+    <dimen name="collect_layout_empty_marginTop">218dp</dimen>
+    <dimen name="collect_layout_empty_marginBottom">210dp</dimen>
+    <dimen name="collect_layout_empty_tv_marginTop">24dp</dimen>
+    <dimen name="collect_layout_empty_btn_width">216dp</dimen>
+    <dimen name="collect_layout_empty_btn_height">53dp</dimen>
+    <dimen name="collect_progressbar_width">146dp</dimen>
+    <dimen name="collect_progressbar_height">146dp</dimen>
+
+    <dimen name="collect_layout_loading_marginLeft">566dp</dimen>
+    <dimen name="collect_layout_loading_marginTop">268dp</dimen>
+    <dimen name="collect_layout_loading_fail_marginTop">268dp</dimen>
+    <dimen name="collect_layout_loading_fail_tv_marginTop1">36dp</dimen>
+    <dimen name="collect_layout_loading_fail_tv_marginTop2">16dp</dimen>
+
+
+    <!-- 收藏item -->
+    <dimen name="collect_item_width">270dp</dimen>
+    <dimen name="collect_item_height">244dp</dimen>
+    <dimen name="collect_item_img_marginLeft">15dp</dimen>
+    <dimen name="collect_item_img_marginRight">15dp</dimen>
+    <dimen name="collect_item_img_marginTop">15dp</dimen>
+    <dimen name="collect_item_img_width">258dp</dimen>
+    <dimen name="collect_item_img_height">131dp</dimen>
+    <dimen name="collect_item_cancel_layout_marginLeft">15dp</dimen>
+    <dimen name="collect_item_cancel_layout_marginRight">15dp</dimen>
+    <dimen name="collect_item_cancel_layout_marginTop">15dp</dimen>
+    <dimen name="collect_item_cancel_layout_width">250dp</dimen>
+    <dimen name="collect_item_cancel_layout_height">131dp</dimen>
+    <dimen name="collect_item_cancel_btn_width">250dp</dimen>
+    <dimen name="collect_item_cancel_btn_height">131dp</dimen>
+    <dimen name="collect_item_cancel_btn_marginBottom">36dp</dimen>
+    <dimen name="collect_item_cancel_btn_marginTop">36dp</dimen>
+    <dimen name="collect_item_info_layout_marginTop">11dp</dimen>
+    <dimen name="collect_item_info_layout_name_marginLeft">32dp</dimen>
+    <dimen name="collect_item_info_layout_name_size">21sp</dimen>
+    <dimen name="collect_item_info_layout_discount_marginTop">-1dp</dimen>
+    <dimen name="collect_item_info_layout_discount_marginLeft">32dp</dimen>
+    <dimen name="collect_item_info_layout_discount_size">21sp</dimen>
+    <dimen name="collect_item_info_layout_original_marginTop">2dp</dimen>
+    <dimen name="collect_item_info_layout_original_marginLeft">12dp</dimen>
+    <dimen name="collect_item_info_layout_original_size">16sp</dimen>
+    <dimen name="collect_item_info_layout_delete_line_marginTop">13.5dp</dimen>
+    <dimen name="collect_item_old_width">250dp</dimen>
+    <dimen name="collect_item_old_height">131dp</dimen>
+
+    <!--详情页-->
+    <dimen name="detail_window_width">710dp</dimen>
+    <dimen name="detail_window_height">414dp</dimen>
+    <dimen name="detail_window_marginLeft">50dp</dimen>
+    <dimen name="detail_window_marginTop">74dp</dimen>
+
+    <dimen name="detail_info_width">404dp</dimen>
+    <dimen name="detail_info_height">544dp</dimen>
+    <dimen name="detail_info_marginRight">64dp</dimen>
+    <dimen name="detail_info_marginTop">88dp</dimen>
+    <dimen name="detail_info_paddingTop">32dp</dimen>
+    <dimen name="detail_info_paddingLeft">28dp</dimen>
+    <dimen name="detail_info_paddingRight">28dp</dimen>
+    <dimen name="detail_info_paddingBottom">21dp</dimen>
+    <dimen name="detail_info_size">18sp</dimen>
+    <dimen name="detail_info_gap">32dp</dimen>
+
+    <dimen name="detail_title_size">32sp</dimen>
+
+    <dimen name="detail_grade_bar_marginLeft">16dp</dimen>
+    <dimen name="detail_grade_bar_marginTop">18dp</dimen>
+    <dimen name="detail_grade_bar_size">18dp</dimen>
+    <dimen name="detail_grade_bar_padding">8dp</dimen>
+
+    <dimen name="detail_price_marginTop">14dp</dimen>
+    <dimen name="detail_time_marginTop">14dp</dimen>
+
+    <dimen name="detail_price_size">32sp</dimen>
+    <dimen name="detail_price_marginLeft">16dp</dimen>
+
+    <dimen name="detail_introduce_marginTop">24dp</dimen>
+    <dimen name="detail_introduce_linesapce">8dp</dimen>
+
+    <dimen name="detail_btn_height">53dp</dimen>
+    <dimen name="detail_btn_marginLeft">20dp</dimen>
+    <dimen name="detail_btn_size">24sp</dimen>
+
+
+    <!--账号页-->
+    <dimen name="account_logout_btn_marginBottom">248dp</dimen>
+
+    <!--登陆页-->
+    <dimen name="login_tip_success_tv_width">328dp</dimen>
+    <dimen name="login_tip_success_tv_height">54dp</dimen>
+    <dimen name="login_tip_success_tv_marginTop">16dp</dimen>
+    <dimen name="login_tip_success_tv_marginBottom">96dp</dimen>
+
+    <!--关于页-->
+    <dimen name="about_title_layout_marginLeft">112dp</dimen>
+    <dimen name="about_title_layout_marginTop">48dp</dimen>
+    <dimen name="about_title_layout_img_marginTop">3dp</dimen>
+    <dimen name="about_title_layout_tv_marginLeft">10dp</dimen>
+    <dimen name="about_title_layout_tv_size">37dp</dimen>
+    <dimen name="about_qrcode_layout_marginTop">196dp</dimen>
+    <dimen name="about_qrcode_tv1_marginTop">20dp</dimen>
+    <dimen name="about_qrcode_tv2_marginTop">4dp</dimen>
+</resources>

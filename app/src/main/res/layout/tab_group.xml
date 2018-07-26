@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/tab_button_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tab_button_scrollview_margin_top"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingEnd="@dimen/tab_button_scrollview_padding"
+        android:paddingStart="@dimen/tab_button_scrollview_padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/tab_button_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/recommend_tab_button_divider"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.konka.kktripclient.layout.view.CustomViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false">
+
+    </com.konka.kktripclient.layout.view.CustomViewPager>
+
+    <FrameLayout
+        android:id="@+id/tab_video_widget_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recommend_widget_bg"
+        android:padding="@dimen/recommend_icon_step"
+        android:visibility="invisible">
+
+    </FrameLayout>
+
+</FrameLayout>

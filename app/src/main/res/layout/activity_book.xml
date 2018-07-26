@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:background="@drawable/main_bg_blur">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:textColor="#784418"
+        android:textSize="32sp"
+        android:text="扫码购买"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="#a16736"
+        android:alpha="0.8"
+        android:textSize="20sp"
+        android:text="微信扫一扫在手机端购买"/>
+
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/book_qrcode_bg">
+
+        <ImageView
+            android:id="@+id/book_img_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/book_btn_return"
+        android:layout_width="176dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:text="返回"
+        android:textSize="@dimen/detail_btn_size"
+        android:textColor="@drawable/detail_btn_txt_selector"
+        android:background="@drawable/detail_btn_selector"/>
+
+</LinearLayout>

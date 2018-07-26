@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_classify_tour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur"
+    tools:context="com.konka.kktripclient.activity.CategoryActivity">
+
+    <!-- 左侧区域背景 -->
+    <ImageView
+        android:id="@+id/category_list_content_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/category_list_content_bg" />
+
+    <!-- 左侧区域 -->
+    <RelativeLayout
+        android:id="@+id/category_list_content"
+        android:layout_width="@dimen/category_list_content_width"
+        android:layout_height="match_parent">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/category_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/category_list_title_margin_bottom"
+            android:layout_marginTop="@dimen/category_list_title_margin_top"
+            android:text="@string/app_name"
+            android:textColor="@color/main_primary"
+            android:textSize="@dimen/category_list_title_size" />
+
+        <!-- 分类列表 -->
+        <com.konka.kktripclient.ui.AppRecyclerView
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/category_list_title"
+            android:layout_centerHorizontal="true"
+            android:descendantFocusability="afterDescendants" />
+    </RelativeLayout>
+
+    <!-- 右侧区域 -->
+    <RelativeLayout
+        android:id="@+id/category_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/category_list_content">
+
+        <!-- 内容 -->
+        <com.konka.kktripclient.ui.AppRecyclerView
+            android:id="@+id/category_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:descendantFocusability="afterDescendants"
+            android:paddingBottom="@dimen/category_item_margin_bottom"
+            android:paddingEnd="@dimen/category_item_margin_end"
+            android:paddingStart="@dimen/category_item_margin_start"
+            android:paddingTop="@dimen/category_item_margin_top" />
+
+        <!-- 加载 -->
+        <RelativeLayout
+            android:id="@+id/category_loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/category_loading_layout_margin_top"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/loading_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <!-- 出错 -->
+        <RelativeLayout
+            android:id="@+id/category_error_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/category_error_layout_margin_top"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/error_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

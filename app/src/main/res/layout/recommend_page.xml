@@ -1,0 +1,14 @@
+<com.konka.kktripclient.layout.view.HorizontalPageScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:scrollbars="none">
+
+    <com.konka.kktripclient.layout.view.OverViewFrameLayout
+        android:id="@+id/recommend_page_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </com.konka.kktripclient.layout.view.OverViewFrameLayout>
+
+</com.konka.kktripclient.layout.view.HorizontalPageScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recommend_dialog_bg_mask"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/exit_dialog_height"
+        android:background="@drawable/recommend_dialog_bg"
+        android:paddingEnd="@dimen/exit_dialog_padding_horizontal"
+        android:paddingStart="@dimen/exit_dialog_padding_horizontal">
+
+        <TextView
+            android:id="@+id/exit_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/exit_dialog_title_margin_top"
+            android:text="@string/exit_dialog_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/exit_dialog_title_size" />
+
+        <TextView
+            android:id="@+id/exit_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exit_dialog_title"
+            android:layout_marginTop="@dimen/exit_dialog_content_margin_top"
+            android:alpha="0.6"
+            android:text="@string/exit_dialog_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/exit_dialog_content_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/exit_dialog_button_margin_bottom">
+
+            <Button
+                android:id="@+id/exit_dialog_ok"
+                android:layout_width="@dimen/recommend_dialog_button_width"
+                android:layout_height="@dimen/recommend_dialog_button_height"
+                android:background="@drawable/recommend_dialog_button_selector"
+                android:text="@string/exit_dialog_ok"
+                android:textColor="@drawable/recommend_dialog_text_selector"
+                android:textSize="@dimen/recommend_dialog_button_size" />
+
+            <Button
+                android:id="@+id/exit_dialog_cancel"
+                android:layout_width="@dimen/recommend_dialog_button_width"
+                android:layout_height="@dimen/recommend_dialog_button_height"
+                android:layout_marginStart="@dimen/recommend_dialog_button_step"
+                android:background="@drawable/recommend_dialog_button_selector"
+                android:text="@string/exit_dialog_cancel"
+                android:textColor="@drawable/recommend_dialog_text_selector"
+                android:textSize="@dimen/recommend_dialog_button_size" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

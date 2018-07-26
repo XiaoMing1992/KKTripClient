@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/account_text1_marginTop"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/account_desc"
+            android:layout_width="@dimen/account_text_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="@string/account_logout_title"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_28_sp" />
+
+        <TextView
+            android:layout_width="@dimen/account_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_desc"
+            android:layout_marginTop="@dimen/account_text2_marginTop"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="@string/account_logout_content"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_24_sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/account_logout"
+        android:layout_width="@dimen/account_button_width"
+        android:layout_height="@dimen/account_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/account_logout_btn_marginBottom"
+        android:background="@drawable/main_button_selected"
+        android:text="@string/account_logout"
+        android:textColor="@color/logout_btn_text"
+        android:textSize="@dimen/default_24_sp" />
+</RelativeLayout>

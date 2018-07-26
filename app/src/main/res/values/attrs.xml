@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="appRecyclerView">
+        <attr name="changeType" format="enum">
+            <enum name="CHANGE_TYPE_PAGE" value="0" />
+            <enum name="CHANGE_TYPE_CENTER" value="1" />
+            <enum name="CHANGE_TYPE_NONE" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_init_state" format="float" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_translate_children" format="boolean" />
+        <attr name="layout_expandable" format="boolean" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="detailBut">
+        <!-- Defining width of each column of VerticalGridView -->
+        <attr name="insideImg" format="reference" />
+        <attr name="imgSize" format="integer" />
+        <!-- Defining number of columns -->
+        <attr name="insideText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

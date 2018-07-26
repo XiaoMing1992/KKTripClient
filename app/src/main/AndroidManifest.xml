@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.konka.kktripclient"
+    android:versionCode="33065"
+    android:versionName="1.0.33065">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".TripApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:theme="@style/TripMainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.CollectActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ManageOrderActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ManageOrderItemActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".detail.DetailActivity"
+            android:excludeFromRecents="true"
+            android:largeHeap="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".detail.VideoActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".detail.WriteActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".detail.OrderActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".detail.BookActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+
+        <receiver android:name=".NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.konka.tvpay.pay.PayActivity"
+            android:excludeFromRecents="true"
+            android:process=":tvpay"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.konka.tvpay.pay.PayActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.konka.advert.KonkaAdService" />
+        <service android:name="com.konka.advert.CommonAdService" />
+
+        <receiver android:name="com.konka.advert.AdReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.konka.android.action.LOAD_AD" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".xiri.VoiceService" />
+
+        <!-- 友盟统计 -->
+        <meta-data android:value="5a3099a4f43e482e690000ae" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="kktrip" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

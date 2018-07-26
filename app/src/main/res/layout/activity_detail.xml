@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_blur">
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_window"
+        android:layout_width="@dimen/detail_window_width"
+        android:layout_height="@dimen/detail_window_height"
+        android:layout_marginStart="@dimen/detail_window_marginLeft"
+        android:layout_marginTop="@dimen/detail_window_marginTop"
+        android:layout_marginLeft="@dimen/detail_window_marginLeft"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:padding="22dp"
+        android:background="@drawable/detail_selector"
+        android:visibility="invisible">
+
+        <com.konka.kktripclient.detail.customview.TripPhotoView
+            android:id="@+id/detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <com.konka.kktripclient.detail.customview.PhotoThumbView
+        android:id="@+id/detail_thumbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_relative_window"/>
+
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_info"
+        android:layout_width="@dimen/detail_info_width"
+        android:layout_height="@dimen/detail_info_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/detail_info_marginTop"
+        android:layout_marginRight="@dimen/detail_info_marginRight"
+        android:background="@drawable/detail_info_bg"
+        android:paddingTop="@dimen/detail_info_paddingTop"
+        android:paddingBottom="@dimen/detail_info_gap"
+
+        android:paddingLeft="@dimen/detail_info_paddingLeft"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/detail_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/detail_info_paddingRight"
+            android:textSize="@dimen/detail_title_size"
+            android:textColor="#784418"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:text=""
+            android:lineSpacingExtra="10dp"
+            android:includeFontPadding="false"/>
+
+        <LinearLayout
+            android:id="@+id/detail_linear_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_txt_title"
+            android:layout_marginTop="@dimen/detail_grade_bar_marginTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:focusable="false"
+                android:text="@string/detail_grade"
+                android:includeFontPadding="false"/>
+
+            <com.konka.kktripclient.detail.customview.RatingBar
+                android:id="@+id/detail_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_grade_bar_marginLeft"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="@dimen/detail_grade_bar_size"
+                app:starPadding="@dimen/detail_grade_bar_padding"
+                app:starStep="5"
+                app:stepSize="Half"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/detail_linear_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_linear_grade"
+            android:layout_marginTop="@dimen/detail_price_marginTop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detail_txt_discounttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:focusable="false"
+                android:text=""
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_price_marginLeft"
+                android:textSize="@dimen/detail_price_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:text="@string/detail_price_rmb"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:id="@+id/detail_txt_discountprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_price_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:text=""
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#EA2222"
+                android:focusable="false"
+                android:text="@string/detail_price_start"
+                android:includeFontPadding="false"/>
+
+
+            <TextView
+                android:id="@+id/detail_txt_oldprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_price_marginLeft"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.6"
+                android:focusable="false"
+                android:text=""
+                android:includeFontPadding="false"/>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/detail_scroll_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_below="@id/detail_linear_price"
+            android:layout_marginTop="@dimen/detail_introduce_marginTop"
+            android:scrollbarThumbVertical="@drawable/introduce_scrollbar_bg">
+
+            <TextView
+                android:id="@+id/detail_txt_introduce"
+                android:layout_width="334dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.9"
+                android:lineSpacingExtra="@dimen/detail_introduce_linesapce"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text=""/>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/detail_linear_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_scroll_introduce"
+            android:layout_marginTop="@dimen/detail_time_marginTop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detail_txt_time_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.9"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="@string/detail_start_time"/>
+
+            <TextView
+                android:id="@+id/detail_txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.9"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_linear_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_linear_time"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.9"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="@string/detail_phone"/>
+
+            <TextView
+                android:id="@+id/detail_txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_info_size"
+                android:textColor="#a16736"
+                android:alpha="0.9"
+                android:maxLines="1"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/detail_btn_buy"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detail_btn_height"
+                android:layout_weight="1"
+                android:text="@string/detail_btn_buy"
+                android:textSize="@dimen/detail_btn_size"
+                android:textColor="@drawable/detail_btn_txt_selector"
+                android:background="@drawable/detail_btn_selector"
+                android:nextFocusLeft="@id/detail_relative_window"/>
+
+            <Button
+                android:id="@+id/detail_btn_save"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/detail_btn_height"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/detail_btn_marginLeft"
+                android:text="@string/detail_btn_save"
+                android:textSize="@dimen/detail_btn_size"
+                android:textColor="@drawable/detail_btn_txt_selector"
+                android:background="@drawable/detail_btn_selector"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.konka.kktripclient.detail.customview.TripVideoView
+        android:id="@+id/detail_video"
+        android:layout_width="666dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="72dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/detail_relative_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_load_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/loading_page" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/detail_error_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include layout="@layout/error_page" />
+    </RelativeLayout>
+</RelativeLayout>

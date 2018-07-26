@@ -1,0 +1,277 @@
+<resources>
+    <string name="app_name">易起浪</string>
+
+    <!-- 我的 -->
+    <string name="my_name">與我有關</string>
+    <string name="my_collect">收藏</string>
+    <string name="my_order">訂單管理</string>
+    <string name="my_setting">設置</string>
+
+    <!--订单管理页-->
+    <string name="order_number">訂單編號</string>
+    <string name="order_info">訂單信息</string>
+    <string name="order_amount">數量</string>
+    <string name="order_money">訂單金額</string>
+    <string name="order_state">訂單狀態</string>
+    <string name="order_state_make">訂單已創建</string>
+    <string name="order_state_pay">訂單已支付</string>
+    <string name="order_state_confirm">商家已確認</string>
+    <string name="order_state_done">訂單已完成</string>
+    <string name="order_state_out">訂單已過期</string>
+    <string name="order_cancel">取消</string>
+    <string name="order_delete">確認刪除</string>
+    <string name="order_can_not_delete">該訂單未出行</string>
+    <string name="order_delete_fail">刪除訂單失敗</string>
+    <string name="order_click_menu">按菜單鍵刪除訂單</string>
+    <string name="order_loading_name">拼命加載中…</string>
+    <string name="order_load_failure1">訂單被風吹走了~</string>
+    <string name="order_load_failure2">試試聯網找回來</string>
+
+    <!--订单详情页-->
+    <string name="manage_order_item_detail_title">訂單詳情</string>
+    <string name="manage_order_item_number">訂單號：</string>
+    <string name="manage_order_item_money_title">共計</string>
+    <string name="manage_order_item_user_info">用戶信息</string>
+    <string name="manage_order_item_user_name">姓名：</string>
+    <string name="manage_order_item_user_addr">地址：</string>
+    <string name="manage_order_item_user_phone">電話：</string>
+    <string name="manage_order_item_continue_pay">繼續支付</string>
+    <string name="manage_order_item_cancel_order">取消訂單</string>
+    <string name="manage_order_item_company_phone">客服電話：0755-86711710</string>
+
+    <!--收藏页-->
+    <string name="collect_empty">空空如也，要想浪先收藏~</string>
+    <string name="collect_go">這就去看看</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="old_collect">已下架</string>
+    <string name="clear_old_collect">清空已下架內容</string>
+    <string name="tip_cancel_collect">按菜單鍵取消收藏</string>
+    <string name="collect_load_failure1">收藏被風吹走了~</string>
+    <string name="collect_load_failure2">試試聯網找回來</string>
+
+    <!--设置详情页-->
+    <string name="setting">設置</string>
+    <string name="setting_login">賬號</string>
+    <string name="setting_version">更新</string>
+    <string name="setting_info">關於</string>
+
+    <string name="setting_about_qrcode_tv1">撩我們</string>
+    <string name="setting_about_qrcode_tv2">如果您有任何問題，可以隨時咨詢我們哦</string>
+
+    <string name="setting_info_description">關於我們</string>
+    <string name="setting_click_login">未登錄</string>
+    <string name="setting_click_modify">修改</string>
+    <string name="setting_click_logout">退出</string>
+    <string name="setting_install_new_version">有新版本，點擊安裝</string>
+    <string name="setting_newest_version">已是最新版本</string>
+    <string name="setting_description">查看說明</string>
+    <string name="setting_user_info_failed">用戶信息異常</string>
+
+    <!--网络异常提示-->
+    <string name="network_exception_hint">網絡異常，請檢查網絡</string>
+
+    <!--活动弹窗-->
+    <string name="pop_activity_view_details">查看詳情</string>
+    <string name="pop_activity_loading_hint">努力加載中...</string>
+
+    <!--升级弹窗-->
+    <string name="upgrade_title">有更新</string>
+    <string name="upgrade_update">更新</string>
+
+    <!--修改账号弹窗-->
+    <string name="account_modify">掃碼修改賬戶信息</string>
+    <string name="account_logout">退出登錄</string>
+    <string name="account_logout_failed">登出失敗</string>
+    <string name="account_logout_title">當前賬戶為</string>
+    <string name="account_logout_content">在手機登錄界面點擊「忘記密碼」，密碼說換就換</string>
+
+    <!--登录弹窗-->
+    <string name="login_scan">掃碼登錄</string>
+    <string name="scan_success">掃碼成功</string>
+    <string name="login_success">登錄成功</string>
+    <string name="login_url_fail">獲取二維碼失敗</string>
+    <string name="login_fail">登陸失敗</string>
+
+    <!-- 首页 -->
+    <string name="ad_time">秒</string>
+    <string name="loading_text">拼命加載中…</string>
+    <string name="error_name">錯誤</string>
+    <string name="error_title">美景被浪花沖走了</string>
+    <string name="error_title_video">視頻加載出錯</string>
+    <string name="error_no_network">請連接網路后重試</string>
+
+    <!-- 分类页 -->
+    <string name="category_list_name">分類類型</string>
+    <string name="category_list_name_route">旅遊</string>
+    <string name="category_list_name_ticket">門票</string>
+    <string name="category_item_name">名稱</string>
+    <string name="category_item_price">¥</string>
+    <string name="category_loading_name">拼命加載中…</string>
+
+    <!-- 推荐弹窗页 -->
+    <string name="recommend_dialog_ok">浪起來</string>
+    <string name="recommend_dialog_cancel">不浪了</string>
+
+    <!-- 退出弹窗页 -->
+    <string name="exit_dialog_title">退出應用</string>
+    <string name="exit_dialog_content">您確定要退出易起浪嗎？</string>
+    <string name="exit_dialog_ok">確 定</string>
+    <string name="exit_dialog_cancel">取 消</string>
+
+    <!--详情页-->
+    <string name="detail_grade">評分</string>
+    <string name="detail_price_rmb">¥</string>
+    <string name="detail_price_start">起</string>
+    <string name="detail_price_oldprice">¥%1$s</string>
+    <string name="detail_start_time">出發時間：</string>
+    <string name="detail_business_time">營業時間：</string>
+    <string name="detail_phone">客服電話：</string>
+    <string name="detail_btn_buy">馬上浪</string>
+    <string name="detail_btn_save">收藏</string>
+    <string name="detail_btn_saved">已收藏</string>
+    <string name="detail_shade_menu">按菜單鍵查看詳情</string>
+    <string name="detail_shade_btn">查看詳情</string>
+    <string name="detail_data_error">商品數據異常</string>
+
+    <!--视频页-->
+    <string name="video_up_coming">即將播放\t%1$s</string>
+    <string name="video_loading_tip">正在加載中...</string>
+    <string name="video_no_data">當前網絡狀態不佳，請退出重試</string>
+
+    <!--填写信息页-->
+    <string name="write_title">填寫信息</string>
+    <string name="write_good_name">商品：</string>
+    <string name="write_good_price">單價：</string>
+    <string name="write_good_price_yuan">元</string>
+    <string name="write_good_num">數量：</string>
+    <string name="write_good_address">出發地：</string>
+    <string name="write_user_name">姓名：</string>
+    <string name="write_user_phone">聯系方式：</string>
+    <string name="write_good_total">總額：</string>
+    <string name="write_btn_sure">確認</string>
+    <string name="write_btn_cancel">取消</string>
+    <string name="write_tip_title">溫馨提示：</string>
+    <string name="write_select_city">選擇城市</string>
+    <string name="write_select_count">選擇數量</string>
+    <string name="write_edit_hint_name">請輸入購買人的姓名</string>
+    <string name="write_edit_hint_phone">請輸入正確的手機號碼</string>
+    <string name="write_toast_noname">*&#160;&#160;請輸入購買人的姓名</string>
+    <string name="write_toast_phone_novild">*&#160;&#160;請輸入正確的手機號碼</string>
+    <string name="write_pay_tip">請耐心等待工作人員與您聯系</string>
+    <string name="write_order_title">您已購買成功，訂單號：%1$s</string>
+    <string name="write_order_btn_back">返回</string>
+    <string name="write_order_btn_check">查看訂單</string>
+    <string name="write_tip_content">·下單成功後48小時內，將有客服人員聯系您並簽訂相關協議\n·若有疑問，請及時聯系 0755-86711710進行咨詢</string>
+    <string name="write_pay_failure">支付失敗</string>
+    <string name="write_protocol_read">我已閱讀並同意</string>
+    <string name="write_protocol_title"><u>《易起浪旅遊產品購買協議》</u></string>
+    <string name="write_protocol_agreee">請先同意協議才能確認購買</string>
+    <string name="protocol_title">易起浪旅遊產品購買協議</string>
+    <string name="order_confirm_title">請確認您的訂單信息</string>
+    <string name="order_confirm_good_title">商品信息</string>
+    <string name="order_confirm_user_title">用戶信息</string>
+    <string name="order_confirm_btn_buy">立即支付</string>
+    <string name="order_confirm_btn_abandon">狠心放棄</string>
+    <string name="order_confirm_user_name">姓名</string>
+    <string name="order_confirm_user_phone">電話</string>
+    <string name="order_confirm_user_time">出發時間</string>
+    <string name="order_confirm_user_address">出發地</string>
+    <string name="order_confirm_state_no_pay">待支付</string>
+
+    <string name="protocol_content">特別提示：易起浪的旅遊產品均由具備資質的第三方供應商提供。第三方供應商充分借用易起浪的網絡預訂平臺，推出全方位的旅遊產品，產品的行程安排以及合同簽訂都是由合作第三方供應商為您提供。易起浪APP<b>作為您獲取旅遊產品的平臺，本協議的簽署並不意味著易起浪APP成為旅遊產品交易的參與者，對前述交易易起浪APP僅提供技術支持。旅遊行程中如發生爭議、糾紛與賠償處理，由您與第三方公司自行處理。</b>\n\n
+    在預訂由易起浪APP為您展示的旅遊產品前，請您仔細閱讀本協議，<b>當您開始預訂旅遊產品時，即表明您已經仔細閱讀並接受本協議的所有條款。</b>\n\n
+        <b>第壹條&#160;&#160;本APP所售賣的旅遊產品內容及其標準</b>\n
+        1.本APP所售賣的旅遊產品內容主要包含：門票、住宿、旅遊路線服務及其他服務。具體產品的最終包含內容以確認的訂單約定內容為準。\n
+        2.易起浪APP中關於旅遊產品的行程推薦僅為友情提示，不能作為約定條款或任何要約。\n
+        3.旅遊產品中約定的產品和服務內容，均為供應商提供，在您消費過程中可能涉及的具體產品和服務內容責任應由您與產品供應商協商確認。\n\n
+        <b>第二條&#160;&#160;旅遊產品價格</b>\n
+        易起浪APP中所展示的產品價格僅為參考價格，由於旅遊產品價格的時效性和波動性，第三方供應商可能因為機票、酒店的價格變動而適度調整其在易起浪APP上已公布的旅遊產品的價格。您預訂的所有旅遊產品的價格，以第三方供應商與您最後確認的金額為準。\n\n
+        <b>第三條&#160;&#160;訂單確認與服務合同的生效</b>\n
+        1.為充分保證您的合法權益，您如要了解路線詳情，請在付款購買前咨詢對應供應商的客服。如對退款等流程有問題，請咨詢易起浪客服0755-86711710。\n
+        2.在購買信息填寫頁面，請認真填寫個人信息，若填寫有誤，易起浪APP除提供相關查詢協助外不承擔任何責任。\n
+        3.下單完成後48小時內，會有相應的供應商客服聯系您並且擬定相關協議。\n
+        4.訂單生效後，如您有任何變更、解除的請求，需與您的供應商直接聯系協商，協商不成的，應按照合同約定和法律法規有關規定處理。\n\n
+        <b>第四條&#160;&#160;您的權利和義務</b>\n
+        1.您應確保出行人身體條件適合本次外出旅遊度假，如出行人為孕婦或有心臟病、高血壓、呼吸系統疾病等病史，請在征得醫院專業醫生同意後出行。\n
+        2.您保證提供給供應商的證件、通訊方式、配送地址等相關資料均真實、有效。\n
+        3.度假期間，您應尊重當地的宗教信仰、民族習慣和風土人情，自覺保護當地自然環境。\n
+        4.您應遵守《易起浪APP用戶服務協議》。您必須通過易起浪APP預訂並通過易起浪APP界面支付全部旅遊款給供應商。如您需要退款請直接聯系產品供應商，易起浪APP將協助產品供應商為您完成退款事宜。\n
+        5.您在旅遊過程中如對第三方供應商的服務質量有異議，應積極與第三方供應商溝通積極爭取在旅遊過程中解決。\n
+        6.您可以選擇通過易起浪APP或第三方供應商投訴電話進行投訴。\n
+        7.為了保護您的權利，積極與產品供應商聯系，並對您與產品供應商使用該電話通話的全過程進行錄音,並保存為證據,必要時用來維護您的合法權益。\n\n
+        <b>第五條&#160;&#160;涉及第三方的相關責任</b>\n
+        第三方指在辦理出境旅遊度假事宜中涉及的發照機關、簽證機關、航空公司、保險公司、境外接待社、飯店、同行團友及其他相關機構、企業和個人。對於易起浪APP無法控制，您與第三方出現的下列情況，可向易起浪APP請求協助辦理，結果由您承擔。\n
+        1.您在旅行中應註意人身財產安全，妥善保管自己的證件及行李物品， 如果發生人身意外、傷害或隨身攜帶行李物品遺失、被盜、被搶等情況，易起浪APP有權利協助辦理，但無賠償之責任；補辦證件所產生的費用，由您自行承擔。解決的依據應以相關機構（如航空公司、酒店、保險公司）的規定為準。您必須保留有關單據和證明文件。\n
+        2.您違反相關國家或地區的法律、法規而被罰、被拘留、遣返及被追究其他刑事、民事責任的，您應依法承擔相關責任和費用。\n
+        3.是否發放護照、簽證，是否準予出入境，系有關國家機構之權力，您應按要求提供真實的資料，供應商可協助辦理。但因您自身原因導致不能及時辦理護照、簽證而影響行程的，以及被相關機關拒發護照、簽證或拒絕入境的，您應承擔全部責任，並應支付供應商的損失及費用。\n
+        4.因有關機構政策調整造成您的護照、簽證延誤，您需按約定承擔已發生的費用。\n
+        5.您違反中華人民共和國及前往國家（地區）的有關規定，攜帶過量貨幣、物品或違禁品而產生的壹切後果由您自行承擔。\n\n
+        <b>第六條&#160;&#160;不可抗力</b>\n
+        1.因不可抗力(包括地震、臺風、雷擊、雪災、水災、火災等自然原因,以及戰爭、政府行為、黑客攻擊、電信部門技術管制等原因)和意外事件等原因不能履行或不能繼續履行已生效訂單約定內容的，雙方均不承擔違約責任，但法律另有規定的除外。\n
+        2.如果發生航班延誤、航班取消等特殊情況，請及時致電供應商客服，由其為您聯系您即將入住的酒店，盡量爭取減少您的損失。\n
+        3.如果由於航空公司燃油漲價或是臨時調價而導致的航線價格上漲，對於已成交的訂單，不再向您收取漲價費用；對於已確認但未付款和未確認的訂單，則以新價格為準。\n
+    </string>
+
+    <!--ijkplayer-->
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+</resources>

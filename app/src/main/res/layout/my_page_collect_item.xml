@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.konka.kktripclient.ui.ScaleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collect_item_layout"
+    android:layout_width="@dimen/collect_item_width"
+    android:layout_height="@dimen/collect_item_height"
+    android:background="@drawable/collect_item_bg"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/collect_item_img_marginLeft"
+        android:layout_marginRight="@dimen/collect_item_img_marginRight"
+        android:layout_marginTop="@dimen/collect_item_img_marginTop"
+        android:gravity="center">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/collect_item_img_width"
+            android:layout_height="@dimen/collect_item_img_height"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            app:riv_corner_radius_top_left="4dp"
+            app:riv_corner_radius_top_right="4dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_layout"
+        android:layout_marginTop="@dimen/collect_item_info_layout_marginTop"
+        android:descendantFocusability="afterDescendants">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/collect_item_info_layout_name_marginLeft"
+            android:layout_marginRight="@dimen/collect_item_info_layout_name_marginLeft"
+            android:ellipsize="marquee"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="东部华侨城"
+            android:textColor="@color/collect_color4"
+            android:textSize="@dimen/collect_item_info_layout_name_size" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/collect_item_info_layout_discount_marginLeft"
+            android:layout_marginTop="@dimen/collect_item_info_layout_discount_marginTop"
+            android:text="￥168"
+            android:textColor="@color/collect_color5"
+            android:textSize="@dimen/collect_item_info_layout_discount_size" />
+
+        <TextView
+            android:id="@+id/original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/collect_item_info_layout_original_marginLeft"
+            android:layout_marginTop="@dimen/collect_item_info_layout_original_marginTop"
+            android:layout_toRightOf="@+id/discount"
+            android:alpha="0.6"
+            android:text="￥200"
+            android:textColor="@color/collect_color4"
+            android:textSize="@dimen/collect_item_info_layout_original_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/original"
+            android:layout_alignRight="@+id/original"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/collect_item_info_layout_delete_line_marginTop"
+            android:layout_toRightOf="@+id/discount"
+            android:background="@drawable/collect_delete_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collect_item_cancel_layout_height"
+        android:layout_marginLeft="@dimen/collect_item_cancel_layout_marginLeft"
+        android:layout_marginRight="@dimen/collect_item_cancel_layout_marginRight"
+        android:layout_marginTop="@dimen/collect_item_cancel_layout_marginTop"
+        android:background="@drawable/cancel_collect_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="@dimen/collect_item_cancel_btn_width"
+            android:layout_height="@dimen/collect_item_cancel_btn_height"
+            android:layout_marginBottom="@dimen/collect_item_cancel_btn_marginBottom"
+            android:layout_marginTop="@dimen/collect_item_cancel_btn_marginTop"
+            android:background="@drawable/main_button_selected"
+            android:gravity="center"
+            android:text="@string/cancel_collect"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_24_sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/old_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collect_item_cancel_layout_height"
+        android:layout_marginLeft="@dimen/collect_item_cancel_layout_marginLeft"
+        android:layout_marginRight="@dimen/collect_item_cancel_layout_marginRight"
+        android:layout_marginTop="@dimen/collect_item_cancel_layout_marginTop"
+        android:background="@drawable/my_collect_old_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/old"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/old_collect"
+            android:textColor="@color/other"
+            android:textSize="@dimen/default_32_sp" />
+
+    </RelativeLayout>
+
+</com.konka.kktripclient.ui.ScaleRelativeLayout>

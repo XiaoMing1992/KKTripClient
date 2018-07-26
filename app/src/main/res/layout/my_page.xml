@@ -1,0 +1,114 @@
+<com.konka.kktripclient.layout.view.HorizontalPageScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:scrollbars="none">
+
+    <com.konka.kktripclient.layout.view.OverViewFrameLayout
+        android:id="@+id/my_over_view_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/my_order_button"
+            android:layout_width="@dimen/my_order_button_layout_width"
+            android:layout_height="@dimen/my_order_button_layout_height"
+            android:layout_marginStart="@dimen/my_order_button_marginStart"
+            android:layout_marginTop="@dimen/my_order_button_marginTop"
+            android:background="@drawable/my_order_bg"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/my_order_icon_marginRight"
+                android:layout_marginTop="@dimen/my_order_icon_marginTop"
+                android:src="@drawable/my_order_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/my_order_button_TextView_marginBottom"
+                android:layout_marginLeft="@dimen/my_order_button_TextView_marginLeft"
+
+                android:alpha="0.7"
+                android:text="@string/my_order"
+                android:textColor="@color/my_page_item_tv"
+                android:textSize="@dimen/my_order_button_TextView_textSize" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_collect_button"
+            android:layout_width="@dimen/my_collect_button_layout_width"
+            android:layout_height="@dimen/my_collect_button_layout_height"
+            android:layout_marginStart="@dimen/my_collect_button_marginStart"
+            android:layout_marginTop="@dimen/my_collect_button_marginTop"
+            android:background="@drawable/my_collect_bg"
+            android:focusable="true"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/my_collect_icon_marginRight"
+                android:layout_marginTop="@dimen/my_collect_icon_marginTop"
+                android:src="@drawable/my_collect_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/my_collect_button_TextView_marginBottom"
+                android:layout_marginLeft="@dimen/my_collect_button_TextView_marginLeft"
+                android:alpha="0.7"
+                android:text="@string/my_collect"
+                android:textColor="@color/my_page_item_tv"
+                android:textSize="@dimen/my_collect_button_TextView_textSize" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_settings_button"
+            android:layout_width="@dimen/my_settings_button_layout_width"
+            android:layout_height="@dimen/my_settings_button_layout_height"
+            android:layout_marginStart="@dimen/my_settings_button_marginStart"
+            android:layout_marginTop="@dimen/my_settings_button_marginTop"
+            android:background="@drawable/my_settings_bg"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/my_settings_icon_marginRight"
+                android:layout_marginTop="@dimen/my_settings_icon_marginTop"
+                android:src="@drawable/my_settings_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/my_settings_button_TextView_marginBottom"
+                android:layout_marginLeft="@dimen/my_settings_button_TextView_marginLeft"
+                android:alpha="0.7"
+                android:text="@string/my_setting"
+                android:textColor="@color/my_page_item_tv"
+                android:textSize="@dimen/my_settings_button_TextView_textSize" />
+        </RelativeLayout>
+    </com.konka.kktripclient.layout.view.OverViewFrameLayout>
+
+
+</com.konka.kktripclient.layout.view.HorizontalPageScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.konka.kktripclient.ui.ScaleRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_episode_relative_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/video_episode_relative_icon"
+        android:layout_width="268dp"
+        android:layout_height="154dp"
+        android:padding="4dp"
+        android:background="@drawable/delete_order_select_bg">
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/video_episode_img_icon"
+            android:layout_width="260dp"
+            android:layout_height="146dp"
+            android:src="@drawable/default_image"
+            app:riv_corner_radius="4dp"/>
+
+
+        <ImageView
+            android:id="@+id/video_episode_cur_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_episode_icon_selector"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/video_episode_txt_item"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/video_episode_relative_icon"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textColor="@drawable/video_episode_txt_selector"
+        android:text=""/>
+
+</com.konka.kktripclient.ui.ScaleRelativeLayout>

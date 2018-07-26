@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="track_view_scale_x" type="id" />
+    <item name="track_view_scale_y" type="id" />
+    <item name="track_view_type" type="id" />
+</resources>
